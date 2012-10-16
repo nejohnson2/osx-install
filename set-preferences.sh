@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/env bash
 
 # turn off dashboard - turn back on w/ boolean NO
 defaults write com.apple.dashboard mcx-disabled -boolean YES 

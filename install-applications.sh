@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 # install homebrew and cask
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"

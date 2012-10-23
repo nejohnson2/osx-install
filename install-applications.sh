@@ -15,9 +15,11 @@ for language in python ruby
   brew cask install $language
 done
 
-for cli in git ack colordiff node rlwrap zsh hub
-	brew install $cli
+for cli in git ack colordiff curl hub nmap node rlwrap
+  brew install $cli
 done
+
+brew install --disable-etcdir zsh
 
 pip install httpie
 

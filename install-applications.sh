@@ -8,11 +8,11 @@ brew install brew-cask
 
 # install applications
 for app in alfred dropbox google-chrome little-snitch the-unarchiver scrup steam sublime-text transmission
-	brew cask install $app
+  brew cask install $app
 done
 
 for language in python ruby
-	brew cask install $language
+  brew cask install $language
 done
 
 for cli in git ack colordiff node rlwrap zsh hub

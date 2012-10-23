@@ -9,9 +9,11 @@ Mac App Store
 
 Package
   jdownloader (http://installer.jdownloader.org/JDownloader09Setup_mac.dmg)
-  quartz composer
-  quartz composer visualizer
-  quartz debug
   totalfinder
   totalterminal
   xcode
+  xcode cli tools
+  xcode graphics tools
+    quartz composer
+    quartz composer visualizer
+    quartz debug

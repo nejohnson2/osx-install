@@ -6,6 +6,7 @@ brew tap phinze/homebrew-cask
 brew tap homebrew/dupes
 brew install brew-cask
 
+# install applications
 for app in alfred dropbox google-chrome little-snitch the-unarchiver scrup steam sublime-text transmission
 	brew cask install $app
 done

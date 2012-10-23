@@ -15,7 +15,7 @@ for language in python ruby
   brew cask install $language
 done
 
-for cli in git ack colordiff curl hub nmap node rlwrap
+for cli in git ack android-sdk colordiff curl hub nmap node rlwrap
   brew install $cli
 done
 

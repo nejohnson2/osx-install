@@ -2,6 +2,9 @@ Jonathan Dahan's OSX 10.8 setup
 
 `./engage.sh` will set osx preferences, install applications through homebrew, and customise said applications
 
+Customizations
+  Symlink ST2 from ~/Application Support/ to ~/.st2 ?
+
 Mac App Store
   cheatsheet
   spectacle

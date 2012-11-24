@@ -1,6 +1,7 @@
 Jonathan Dahan's OSX 10.8 setup
 
 `./engage.sh` will set osx preferences, install and customize applications
+It requires xcode cli tools (from http://connect.apple.com)
 
 Todo
   * add sublime text 2 preferences

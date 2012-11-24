@@ -12,3 +12,12 @@ chsh -s /bin/zsh
 # Install Inconsolata
 curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inconsolata.otf
 
+## Terminal
+
+# Use Monokai theme
+curl https://raw.github.com/stephenway/Monokai.terminal/master/Monokai.terminal -o ${HOME}/Downloads/Monokai.terminal
+open ${HOME}/Downloads/Monokai.terminal
+sleep 1
+defaults write com.apple.terminal "Default Window Settings" -string "Monokai"
+defaults write com.apple.terminal "Startup Window Settings" -string "Monokai"
+

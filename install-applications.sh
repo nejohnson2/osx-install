@@ -11,7 +11,7 @@ for app in alfred dropbox google-chrome little-snitch the-unarchiver scrup steam
 done
 
 for language in python ruby
-  brew cask install $language
+  brew install $language
 done
 
 for cli in ack android-sdk colordiff curl hub jq nmap node rlwrap

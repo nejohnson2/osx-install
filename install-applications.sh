@@ -39,3 +39,4 @@ brew install --disable-etcdir zsh
 pip install httpie
 
 sudo gem install homesick
+sudo gem install lolcat

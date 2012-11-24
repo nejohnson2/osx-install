@@ -6,7 +6,6 @@ Todo
   * add sublime text 2 preferences
   * switch boot screen logo
   * disable bluetooth
-  * disable gatekeeper
   * install package manager for sublime text 2
   * set terminal app font to inconsolata size 16
   * install textual + settings

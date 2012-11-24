@@ -86,6 +86,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
+## Disable Gatekeeper
+sudo spctl --master-disable
+
 ## Cleanup
 
 # Kill affected applications

@@ -21,3 +21,8 @@ sleep 1
 defaults write com.apple.terminal "Default Window Settings" -string "Monokai"
 defaults write com.apple.terminal "Startup Window Settings" -string "Monokai"
 
+## Sublime Text 2
+
+# Symlink subl script
+ln -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin
+

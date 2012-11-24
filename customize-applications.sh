@@ -53,5 +53,10 @@ defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
 
+## Boot Logo
+
+# Install glider Boot Logo
+sudo cp boot/{BootLogo,DefaultDesktop}.png /System/Library/CoreServices/
+
 ## Block malware
 sudo curl http://winhelp2002.mvps.org/hosts.txt -a /private/etc/hosts

@@ -1,4 +1,4 @@
-#!/bin/env zsh
+## Shell
 
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 homesick clone jedahan/dotfiles && homesick symlink jedahan/dotfiles

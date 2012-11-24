@@ -1,7 +1,10 @@
-Jonathan Dahan's OSX 10.8 setup
+jedahan's Mountain Lion setup
 
 `./engage.sh` will set osx preferences, install and customize applications
-It requires xcode cli tools (from http://connect.apple.com)
+
+Requirements
+  * 10.8.1
+  * xcode cli tools (http://connect.apple.com)
 
 Todo
   * sublime text preferences

@@ -1,7 +1,6 @@
-#!/bin/env bash
-
 # install homebrew and cask
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
+brew install git
 brew tap phinze/homebrew-cask
 brew tap homebrew/dupes
 brew install brew-cask
@@ -15,7 +14,7 @@ for language in python ruby
   brew cask install $language
 done
 
-for cli in git ack android-sdk colordiff curl hub jq nmap node rlwrap
+for cli in ack android-sdk colordiff curl hub jq nmap node rlwrap
   brew install $cli
 done
 

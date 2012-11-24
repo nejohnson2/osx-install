@@ -33,3 +33,12 @@ defaults write com.apple.terminal TotalTerminalShowStatusItem -int 0
 # Use normal finder icon
 defaults write com.apple.finder TotalFinderDontCustomizeDockIcon -int 1
 
+## Alfred
+
+# Hide hat icon
+defaults write com.alfredapp.alfred "appearance.hideHat" -int 1
+# Hide preferences cog
+defaults write com.alfredapp.alfred "appearance.hidePreferencesCogIcon" -int 1
+# Hide menubar icon
+defaults write com.alfredapp.alfred "appearance.hideStatusBarIcon" -int 1
+

@@ -26,3 +26,10 @@ defaults write com.apple.terminal "Startup Window Settings" -string "Monokai"
 # Symlink subl script
 ln -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin
 
+## TotalTerminal
+
+# Hide menubar icon
+defaults write com.apple.terminal TotalTerminalShowStatusItem -int 0
+# Use normal finder icon
+defaults write com.apple.finder TotalFinderDontCustomizeDockIcon -int 1
+

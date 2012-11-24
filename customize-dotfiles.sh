@@ -4,4 +4,6 @@
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 # Use zsh dotfiles
 homesick clone jedahan/dotfiles && homesick symlink jedahan/dotfiles
+# Make zsh default shell
 chsh -s /bin/zsh
+

@@ -52,3 +52,6 @@ defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 defaults write org.m0k.transmission WarningDonate -bool false
 # Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
+
+## Block malware
+sudo curl http://winhelp2002.mvps.org/hosts.txt -a /private/etc/hosts

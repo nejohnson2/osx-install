@@ -18,6 +18,22 @@ for cli in ack android-sdk colordiff curl hub jq nmap node rlwrap
   brew install $cli
 done
 
+# Install TotalFinder and TotalTerminal
+for package in TotalFinder-1.4.3 TotalTerminal-1.3
+  name=${package%%-*}
+  old_pwd=`pwd`
+  cd ${HOME}/Downloads
+  curl -OL "http://downloads.binaryage.com/${package}.dmg"
+  hdiutil attach ${package}.dmg
+  cd /Volumes/${name}
+  sudo installer -pkg /Volumes/${name}/${name}.pkg -target "/"
+  cd ${HOME}/Downloads
+  sleep 3
+  hdiutil detach /Volumes/${name}
+  rm ${package}.dmg
+  cd $old_pwd
+done
+
 brew install --disable-etcdir zsh
 
 pip install httpie

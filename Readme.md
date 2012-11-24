@@ -4,19 +4,13 @@ Jonathan Dahan's OSX 10.8 setup
 It requires xcode cli tools (from http://connect.apple.com)
 
 Todo
-  * add sublime text 2 preferences
+  * sublime text preferences
+  * textual preferences
+  * terminal font size
+  * sublime text package manager
+
+  * install starcraft
+
   * disable bluetooth
-  * install package manager for sublime text 2
-  * set terminal app font to inconsolata size 16
-  * install textual + settings
-  * twitter
-  * starcraft 2
-  * jdownloader
-  * totalfinder
-  * totalterminal
-  * xcode
-  * xcode cli tools
-  * xcode graphics tools
-    * quartz composer
-    * quartz composer visualizer
-    * quartz debug
+
+  * install textual, twitter, xcode from appstore

@@ -22,4 +22,4 @@ brew install --disable-etcdir zsh
 
 pip install httpie
 
-gem install homesick
+sudo gem install homesick

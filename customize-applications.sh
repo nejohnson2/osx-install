@@ -32,6 +32,13 @@ ln -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/l
 defaults write com.apple.terminal TotalTerminalShowStatusItem -int 0
 # Use normal finder icon
 defaults write com.apple.finder TotalFinderDontCustomizeDockIcon -int 1
+# Enable autoupdate
+defaults write com.binaryage.totalterminal SUEnableAutomaticChecks -bool true
+
+## TotalFinder
+
+# Enable autoupdate
+defaults write com.binaryage.totalfinder SUEnableAutomaticChecks -bool true
 
 ## Alfred
 
@@ -41,6 +48,16 @@ defaults write com.alfredapp.alfred "appearance.hideHat" -int 1
 defaults write com.alfredapp.alfred "appearance.hidePreferencesCogIcon" -int 1
 # Hide menubar icon
 defaults write com.alfredapp.alfred "appearance.hideStatusBarIcon" -int 1
+
+## Sublime Text 2
+
+# Enable autoupdate
+defaults write com.sublimetext.2 SUEnableAutomaticChecks -bool true
+
+## Twitter
+
+# Make font a little bigger
+defaults write com.twitter.twitter-mac FontSize 14
 
 ## Transmission
 

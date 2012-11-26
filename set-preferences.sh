@@ -1,9 +1,10 @@
 ## General
 
 # Set computer name
-scutil --set ComputerName "talon"
-scutil --set HostName "talon"
-scutil --set LocalHostName "talon"
+name="talon"
+scutil --set ComputerName $name
+scutil --set HostName $name
+scutil --set LocalHostName $name
 
 ## Input Devices
 

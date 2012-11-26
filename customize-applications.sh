@@ -45,13 +45,28 @@ defaults write com.alfredapp.alfred "appearance.hideStatusBarIcon" -int 1
 ## Transmission
 
 # Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
+
 # Trash original torrent files
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-# Hide the donate message
+# Hide the donate and legal messages
 defaults write org.m0k.transmission WarningDonate -bool false
-# Hide the legal disclaimer
 defaults write org.m0k.transmission WarningLegal -bool false
+# Setup Blocklist
+defaults write org.m0k.transmission BlocklistURL -string "http://list.iblocklist.com/?list=bt_level1&fileformat=p2p&archiveformat=gz"
+defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
+defaults write org.m0k.transmission BlocklistNew -bool true
+# Require Encryption
+defaults write org.m0k.transmission EncryptionRequire -bool true
+# Minimal UI
+defaults write org.m0k.transmission SmallView -bool true
+defaults write org.m0k.transmission InfoVisible -bool false
+defaults write org.m0k.transmission StatusBar -bool false
+defaults write org.m0k.transmission AutoSize -bool true
+defaults write org.m0k.transmission BadgeDownloadRate -bool false
+defaults write org.m0k.transmission BadgeUploadRate -bool false
+defaults write org.m0k.transmission DownloadAsk -bool false
+defaults write org.m0k.transmission MagnetOpenAsk -bool false
+defaults write org.m0k.transmission DownloadAsk -bool false
 
 ## Boot Logo
 

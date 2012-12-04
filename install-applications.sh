@@ -1,6 +1,6 @@
 # install homebrew and cask
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-brew install git
+brew install git --with-pcre
 brew tap phinze/homebrew-cask
 brew tap homebrew/dupes
 brew install brew-cask

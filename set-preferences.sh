@@ -15,6 +15,9 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
+# Disable macbook keyboard auto-illumination
+defaults write com.apple.BezelServices kDim -bool false
+
 ## User Interface
 
 # Disable auto-correct

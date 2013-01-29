@@ -38,5 +38,6 @@ brew install --disable-etcdir zsh
 
 pip install httpie
 
-sudo gem install homesick
-sudo gem install lolcat
+for rubygem in homesick lolcat lolcommits
+  sudo gem install $rubygem
+done

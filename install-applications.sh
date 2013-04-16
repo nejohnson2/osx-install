@@ -6,7 +6,7 @@ brew tap homebrew/dupes
 brew install brew-cask
 
 # install applications
-for app in alfred dropbox google-chrome little-snitch the-unarchiver scrup steam sublime-text transmission
+for app in alfred app-cleaner daisy-disk dropbox google-chrome google-chrome-canary little-snitch the-unarchiver steam sublime-text textual transmission
   brew cask install $app
 done
 

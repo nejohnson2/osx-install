@@ -1,9 +1,9 @@
-jedahan's Mountain Lion setup
+# jedahan's Mountain Lion setup
 
 `./engage.sh` will set osx preferences, install and customize applications
 
 Requirements
-  * 10.8.1
+  * 10.8.4
   * xcode cli tools (http://connect.apple.com)
 
 Todo

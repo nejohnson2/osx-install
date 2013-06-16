@@ -6,7 +6,7 @@ brew tap homebrew/dupes
 brew install brew-cask
 
 # install applications
-for app in alfred app-cleaner daisy-disk dropbox google-chrome google-chrome-canary little-snitch the-unarchiver steam sublime-text textual transmission
+for app in alfred app-cleaner daisy-disk dropbox google-chrome little-snitch the-unarchiver steam sublime-text super-collider textual transmission
   brew cask install $app
 done
 
@@ -18,8 +18,12 @@ for cli in android-sdk colordiff curl hub jq nmap node rlwrap the_silver_searche
   brew install $cli
 done
 
+for npm_cli in coffee-script meteorite police
+  npm install -g $npm_cli
+done
+
 # Install TotalFinder and TotalTerminal
-for package in TotalFinder-1.4.3 TotalTerminal-1.3
+for package in TotalFinder-1.4.10 TotalTerminal-1.3
   name=${package%%-*}
   old_pwd=`pwd`
   cd ${HOME}/Downloads
@@ -38,6 +42,6 @@ brew install --disable-etcdir zsh
 
 pip install httpie
 
-for rubygem in homesick lolcat lolcommits
+for rubygem in foreman homesick lolcat lolcommits
   sudo gem install $rubygem
 done

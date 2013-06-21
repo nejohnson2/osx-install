@@ -14,7 +14,7 @@ for language in python ruby
   brew install $language
 done
 
-for cli in android-sdk colordiff curl hub jq nmap node rlwrap the_silver_searcher trash
+for cli in android-sdk curl iftop jq kismet mongodb nmap node redis rlwrap the_silver_searcher ssh-copy-id tor trash
   brew install $cli
 done
 

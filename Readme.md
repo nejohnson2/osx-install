@@ -17,3 +17,6 @@ Todo
   * disable bluetooth
 
   * install textual, twitter, xcode from appstore
+
+Monokai here for iTerm2
+  https://gist.github.com/lukaszkorecki/1564995/download

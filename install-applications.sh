@@ -6,7 +6,7 @@ brew tap homebrew/dupes
 brew install brew-cask
 
 # install applications
-for app in alfred app-cleaner daisy-disk dropbox google-chrome little-snitch the-unarchiver steam sublime-text super-collider textual transmission
+for app in alfred app-cleaner arduino daisy-disk dropbox google-chrome iterm2 little-snitch the-unarchiver steam sublime-text super-collider textual transmission
   brew cask install $app
 done
 
@@ -22,8 +22,8 @@ for npm_cli in coffee-script meteorite police
   npm install -g $npm_cli
 done
 
-# Install TotalFinder and TotalTerminal
-for package in TotalFinder-1.4.10 TotalTerminal-1.3
+# Install TotalFinder
+for package in TotalFinder-1.4.10
   name=${package%%-*}
   old_pwd=`pwd`
   cd ${HOME}/Downloads

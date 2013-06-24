@@ -46,7 +46,6 @@ defaults write com.googlecode.iterm2 HotkeyModifiers -int 524576
 # Enable autoupdate
 defaults write com.binaryage.totalfinder SUEnableAutomaticChecks -int 1
 # Add license
-defaults write com.apple.finder TotalFinderLicenseKey -string "GAWAE-FBMLF-QMPJW-DM69L-EVTLL-8J593-RTZ8P-86DQC-CQJYC-84KQJ-VC2JN-8EKV6-YSZ6F-3XKNS-YR4A"
 defaults write com.apple.finder TotalFinderLicenseName -string "Jonathan Dahan"
 # Keep default dock icon
 defaults write com.apple.finder TotalFinderDontCustomizeDockIcon -int 1

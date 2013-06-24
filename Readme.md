@@ -42,3 +42,6 @@ Todo
   * textual openframworks
 
   * finder smb://sgidevap00/www + dahanj login
+
+  * alfred powerpack registration
+  * dev doctor for alfred

@@ -12,14 +12,11 @@ chsh -s /bin/zsh
 # Install Inconsolata
 curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inconsolata.otf
 
-## Terminal
-
-# Use Monokai theme
-curl https://raw.github.com/stephenway/Monokai.terminal/master/Monokai.terminal -o ${HOME}/Downloads/Monokai.terminal
-open ${HOME}/Downloads/Monokai.terminal
-sleep 1
-defaults write com.apple.terminal "Default Window Settings" -string "Monokai"
-defaults write com.apple.terminal "Startup Window Settings" -string "Monokai"
+## iTerm2
+pushd $TMPDIR
+curl -O https://gist.github.com/lukaszkorecki/1564995/raw/43cc2dae2dac748e54c857a60a2eb330586441cc/Monkai-iterm2.itermcolors
+open Monkai-iterm2.itermcolors
+popd
 
 ## Sublime Text 2
 
@@ -29,26 +26,40 @@ ln -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/l
 ## iTerm2
 
 # Disable Hotkey Animation
-defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration
+defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -int 0
+# Disable prompt on quit
+defaults write com.googlecode.iterm2 PromptOnQuit -int 0
+# Keep running even if there are no windows
+defaults write com.googlecode.iterm2 QuitWhenAllWindowsClosed -int 0
+# Autoupdate
+defaults write com.googlecode.iterm2 SUAutomaticallyUpdate -int 1
+defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -int 1
+# Option+` for fullscreen hotkey
+defaults write com.googlecode.iterm2 HotKeyTogglesWindow -int 1
+defaults write com.googlecode.iterm2 Hotkey -int 1
+defaults write com.googlecode.iterm2 HotkeyChar -int 96
+defaults write com.googlecode.iterm2 HotkeyCode -int 50
+defaults write com.googlecode.iterm2 HotkeyModifiers -int 524576
 
 ## TotalFinder
 
 # Enable autoupdate
-defaults write com.binaryage.totalfinder SUEnableAutomaticChecks -bool true
+defaults write com.binaryage.totalfinder SUEnableAutomaticChecks -int 1
+# Add license
+defaults write com.apple.finder TotalFinderLicenseKey -string "GAWAE-FBMLF-QMPJW-DM69L-EVTLL-8J593-RTZ8P-86DQC-CQJYC-84KQJ-VC2JN-8EKV6-YSZ6F-3XKNS-YR4A"
+defaults write com.apple.finder TotalFinderLicenseName -string "Jonathan Dahan"
+# Keep default dock icon
+defaults write com.apple.finder TotalFinderDontCustomizeDockIcon -int 1
+# Narrow tabs bar
+defaults write com.apple.finder TotalFinderNarrowTabsBar -int 1
+# Always maximise
+defaults write com.apple.finder TotalFinderAlwaysMaximize -int 1
+# Open new tabs with current target
+defaults write com.apple.finder TotalFinderNewTabsWithCurrentTarget -int 1
 
-## Alfred
+## Finder
+defaults write com.apple.finder NewWindowTargetPath -string "file://localhost/Users/jedahan/Downloads/"
 
-# Hide hat icon
-defaults write com.alfredapp.alfred "appearance.hideHat" -int 1
-# Hide preferences cog
-defaults write com.alfredapp.alfred "appearance.hidePreferencesCogIcon" -int 1
-# Hide menubar icon
-defaults write com.alfredapp.alfred "appearance.hideStatusBarIcon" -int 1
-
-## Sublime Text 2
-
-# Enable autoupdate
-defaults write com.sublimetext.2 SUEnableAutomaticChecks -bool true
 
 ## Twitter
 
@@ -56,8 +67,6 @@ defaults write com.sublimetext.2 SUEnableAutomaticChecks -bool true
 defaults write com.twitter.twitter-mac FontSize 14
 
 ## Transmission
-
-# Don’t prompt for confirmation before downloading
 
 # Trash original torrent files
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
@@ -87,4 +96,7 @@ defaults write org.m0k.transmission DownloadAsk -bool false
 sudo cp boot/{BootLogo.png,DefaultDesktop.jpg} /System/Library/CoreServices/
 
 ## Block malware
-sudo curl http://winhelp2002.mvps.org/hosts.txt -a /private/etc/hosts
+sudo curl 'winhelp2002.mvps.org/hosts.txt' -a -o /private/etc/hosts
+
+## Make firefox default browser
+## Remove always perform this check when starting firefox (for default browser)

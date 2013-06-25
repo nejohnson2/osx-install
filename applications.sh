@@ -1,4 +1,4 @@
-# install homebrew and cask
+# Install homebrew with cask
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 brew install git --with-pcre
 brew install --disable-etcdir zsh
@@ -6,7 +6,7 @@ brew tap phinze/homebrew-cask
 brew tap homebrew/dupes
 brew install brew-cask
 
-# install applications
+# Install applications
 $apps = 'alfred app-cleaner arduino dropbox firefox iterm2 sublime-text transmission'
 $languages = 'python ruby'
 $clis = 'android-sdk curl kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash'

@@ -1,10 +1,10 @@
 # jedahan's Mountain Lion setup
 
-`./engage.sh` will set osx preferences, install and customize applications
+`./engage.sh` will set osx preferences, install applications, install dotfiles and set application defaults
 
 Requirements
-  * 10.8.4
-  * xcode cli tools (http://connect.apple.com)
+  * OSX 10.8.4
+  * [xcode cli tools](http://connect.apple.com)
 
 Todo
   * starcraft install
@@ -24,7 +24,7 @@ Todo
   * system hide bluetooth from menu bar
   * system turn bluetooth off
 
-  * alfred look for /usr/local/cellar path
+  * alfred look for /opt/homebrew-cask/Caskroom path
 
   * textual username
   * textual freenode

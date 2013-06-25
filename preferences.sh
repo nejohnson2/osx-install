@@ -43,33 +43,36 @@ defaults write com.apple.menuextra.clock DateFormat -string "h:mm"
 
 ## Finder
 
-# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+# Finder: Open home folder in new windows
+defaults write com.apple.finder NewWindowTargetPath -string "file://localhost/Users/jedahan/"
+
+# Finder: Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
+# Finder: Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true
 
-# Disable window animations and Get Info animations in Finder
+# Finder: Disable window animations and Get Info animations in Finder
 defaults write com.apple.finder DisableAllAnimations -bool true
 
-# Allow text selection in Quick Look
+# Finder: Allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
-# Open a new Finder window when a volume is mounted
+# Finder: Open a new Finder window when a volume is mounted
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
-# Disable .DS_Store file creation on network volumes
+# Finder: Disable .DS_Store file creation on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# Disable the warning when changing a file extension
+# Finder: Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Disable the warning before emptying the Trash
+# Finder: Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-# Display full POSIX path as Finder window title
+# Finder: Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 ## Customization

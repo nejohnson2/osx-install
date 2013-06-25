@@ -7,40 +7,31 @@ brew tap homebrew/dupes
 brew install brew-cask
 
 # install applications
-for app in alfred app-cleaner arduino dropbox firefox iterm2 sublime-text transmission; do
-  brew cask install $app
-done
+$apps = 'alfred app-cleaner arduino dropbox firefox iterm2 sublime-text transmission'
+$languages = 'python ruby'
+$clis = 'android-sdk curl kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash'
+$npm_clis = 'coffee-script meteorite police'
+$pips = 'httpie'
+$rubygems = 'foreman homesick lolcat lolcommits'
 
-for language in python ruby; do
-  brew install $language
-done
-
-for cli in android-sdk curl kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash; do
-  brew install $cli
-done
-
-for npm_cli in coffee-script meteorite police; do
-  npm install -g $npm_cli
-done
+for app in $apps; do brew cask install $app; done
+for language in $languages; do brew install $language; done
+for cli in $clis; do brew install $cli; done
+for npm_cli in $npm_clis; do npm install -g $npm_cli; done
+for pip in $pips; do pip install $pip; done
+for rubygem in $rubygems; do gem install $rubygem; done
 
 # Install TotalFinder
 for package in TotalFinder-1.4.10; do
   name=${package%%-*}
-  old_pwd=`pwd`
-  cd ${HOME}/Downloads
+  pushd ${HOME}/Downloads
   curl -OL "http://downloads.binaryage.com/${package}.dmg"
   hdiutil attach ${package}.dmg
-  cd /Volumes/${name}
+  pushd /Volumes/${name}
   sudo installer -pkg /Volumes/${name}/${name}.pkg -target "/"
-  cd ${HOME}/Downloads
+  popd
   sleep 3
   hdiutil detach /Volumes/${name}
   rm ${package}.dmg
-  cd $old_pwd
-done
-
-pip install httpie
-
-for rubygem in foreman homesick lolcat lolcommits; do
-  gem install $rubygem
+  popd
 done

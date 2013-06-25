@@ -25,21 +25,8 @@ ln -s ~/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/l
 
 ## iTerm2
 
-# Disable Hotkey Animation
-defaults write com.googlecode.iterm2 HotkeyTermAnimationDuration -int 0
-# Disable prompt on quit
-defaults write com.googlecode.iterm2 PromptOnQuit -int 0
-# Keep running even if there are no windows
-defaults write com.googlecode.iterm2 QuitWhenAllWindowsClosed -int 0
-# Autoupdate
-defaults write com.googlecode.iterm2 SUAutomaticallyUpdate -int 1
-defaults write com.googlecode.iterm2 SUEnableAutomaticChecks -int 1
-# Option+` for fullscreen hotkey
-defaults write com.googlecode.iterm2 HotKeyTogglesWindow -int 1
-defaults write com.googlecode.iterm2 Hotkey -int 1
-defaults write com.googlecode.iterm2 HotkeyChar -int 96
-defaults write com.googlecode.iterm2 HotkeyCode -int 50
-defaults write com.googlecode.iterm2 HotkeyModifiers -int 524576
+# Use preferences from homesick symlink
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/.iterm2"
 
 ## TotalFinder
 

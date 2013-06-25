@@ -16,17 +16,6 @@ Todo
   * sublime text preferences
   * sublime text package manager
 
-  * iTerm2 monkai ( https://gist.github.com/lukaszkorecki/1564995/download )
-  * iTerm2 font size
-  * iTerm2 reuse previous tabs directory
-  * iTerm2 window style fullscreen
-  * iTerm2 window transparency 50
-  * iTerm2 terminal scrollback lines 10,000
-  * iterm2 terminal type xterm-256color
-  * iTerm2 disable use lion style fullscreen windows
-  * iTerm2 inconsolata 18 point font
-  * iTerm2 silence bell
-
   * dropbox black icon
 
   * totalfinder no menu bar icon

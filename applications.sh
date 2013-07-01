@@ -4,12 +4,13 @@ brew install git --with-pcre
 brew install --disable-etcdir zsh
 brew tap phinze/homebrew-cask
 brew tap homebrew/dupes
+brew tap gerhard/homebrew-deliver
 brew install brew-cask
 
 # Install applications
 $apps = 'alfred app-cleaner arduino dropbox firefox iterm2 sublime-text transmission'
 $languages = 'python ruby'
-$clis = 'android-sdk curl kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash'
+$clis = 'android-sdk curl deliver kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash'
 $npm_clis = 'coffee-script meteorite police'
 $pips = 'httpie'
 $rubygems = 'foreman homesick lolcat lolcommits'

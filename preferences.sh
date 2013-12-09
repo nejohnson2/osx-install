@@ -5,6 +5,7 @@ name="talon"
 scutil --set ComputerName $name
 scutil --set HostName $name
 scutil --set LocalHostName $name
+defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $name
 
 ## Input Devices
 

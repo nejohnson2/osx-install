@@ -13,16 +13,10 @@ defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server Net
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Disable macbook keyboard auto-illumination
-defaults write com.apple.BezelServices kDim -bool false
-
 ## User Interface
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-# Force UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
 
 # Disable the dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean YES

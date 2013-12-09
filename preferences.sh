@@ -39,7 +39,7 @@ defaults write com.apple.menuextra.clock DateFormat -string "h:mm"
 ## Finder
 
 # Finder: Open home folder in new windows
-defaults write com.apple.finder NewWindowTargetPath -string "file://localhost/Users/jedahan/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://localhost/Users/jedahan/Dropbox/"
 
 # Finder: Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3

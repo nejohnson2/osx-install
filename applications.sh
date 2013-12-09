@@ -1,4 +1,5 @@
 # Install homebrew with cask
+xcode-select --install # install cli tools!
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
 brew install git --with-pcre
 brew install --disable-etcdir zsh

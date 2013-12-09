@@ -15,6 +15,7 @@ $clis = 'android-sdk curl deliver kismet mongodb nmap node redis the_silver_sear
 $npm_clis = 'coffee-script meteorite police'
 $pips = 'httpie'
 $rubygems = 'foreman homesick lolcat lolcommits'
+$quicklook_plugins = 'qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package'
 
 for app in $apps; do brew cask install $app; done
 for language in $languages; do brew install $language; done
@@ -22,6 +23,7 @@ for cli in $clis; do brew install $cli; done
 for npm_cli in $npm_clis; do npm install -g $npm_cli; done
 for pip in $pips; do pip install $pip; done
 for rubygem in $rubygems; do gem install $rubygem; done
+for quicklook in $quicklook_plugins; do brew cask install $plugin; done && qlmanage -r
 
 # Install TotalFinder
 for package in TotalFinder-1.4.10; do

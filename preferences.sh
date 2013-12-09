@@ -78,6 +78,9 @@ chflags nohidden ~/Library
 # Disable Gatekeeper
 sudo spctl --master-disable
 
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
 ## Cleanup
 
 # Kill affected applications

@@ -26,7 +26,7 @@ for rubygem in $rubygems; do gem install $rubygem; done
 for quicklook in $quicklook_plugins; do brew cask install $plugin; done && qlmanage -r
 
 # Install TotalFinder
-for package in TotalFinder-1.4.10; do
+for package in TotalFinder-1.5.2; do
   name=${package%%-*}
   pushd ${HOME}/Downloads
   curl -OL "http://downloads.binaryage.com/${package}.dmg"

@@ -11,7 +11,7 @@ brew install brew-cask
 # Install applications
 $apps = 'alfred app-cleaner arduino dropbox firefox iterm2 sublime-text transmission'
 $languages = 'python ruby'
-$clis = 'android-sdk curl deliver kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash'
+$clis = 'android-sdk curl deliver kismet mongodb nmap node redis the_silver_searcher ssh-copy-id tor trash watch'
 $npm_clis = 'coffee-script meteorite police'
 $pips = 'httpie'
 $rubygems = 'foreman homesick lolcat lolcommits'

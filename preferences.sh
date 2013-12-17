@@ -30,9 +30,14 @@ defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-# Menubar shows volume wifi battery and clock
-# maybe add displays.menu...unless it loads automatically
-defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu" "/System/Library/CoreServices/Menu Extras/User.menu"
+# Remove default apps from the Dock
+defaults write com.apple.dock persistent-apps -array
+
+# Hide Time Machine, User, and Bluetooth icons
+defaults write ~/Library/Preferences/ByHost/com.apple.systemuiserver.* dontAutoLoad -array \
+  "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+  "/System/Library/CoreServices/Menu Extras/User.menu" \
+  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
 
 # Set clock format
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm"

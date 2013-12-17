@@ -3,12 +3,16 @@ sudo xcode-select --install
 sudo xcodebuild -license
 # Install homebrew
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-brew install git --with-pcre
-brew install --disable-etcdir zsh
+
+# Install homebrew cask
 brew tap phinze/homebrew-cask
+brew install brew-cask
+# Tap dupes and deliver
 brew tap homebrew/dupes
 brew tap gerhard/homebrew-deliver
-brew install brew-cask
+# Install latest git and zsh
+brew install git --with-pcre
+brew install --disable-etcdir zsh
 
 # Install applications
 $apps = 'alfred app-cleaner arduino dropbox firefox iterm2 sublime-text transmission'

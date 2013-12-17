@@ -29,19 +29,3 @@ for cli in $clis; do brew install $cli; done
 for npm_cli in $npm_clis; do npm install -g $npm_cli; done
 for pip in $pips; do pip install $pip; done
 for rubygem in $rubygems; do gem install $rubygem; done
-for quicklook in $quicklook_plugins; do brew cask install $plugin; done && qlmanage -r
-
-# Install TotalFinder
-for package in TotalFinder-1.5.2; do
-  name=${package%%-*}
-  pushd ${HOME}/Downloads
-  curl -OL "http://downloads.binaryage.com/${package}.dmg"
-  hdiutil attach ${package}.dmg
-  pushd /Volumes/${name}
-  sudo installer -pkg /Volumes/${name}/${name}.pkg -target "/"
-  popd
-  sleep 3
-  hdiutil detach /Volumes/${name}
-  rm ${package}.dmg
-  popd
-done

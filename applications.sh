@@ -29,3 +29,4 @@ for cli in $clis; do brew install $cli; done
 for npm_cli in $npm_clis; do npm install -g $npm_cli; done
 for pip in $pips; do pip install $pip; done
 for rubygem in $rubygems; do gem install $rubygem; done
+for quicklook in $quicklook_plugins; do brew cask install $plugin; done && qlmanage -r

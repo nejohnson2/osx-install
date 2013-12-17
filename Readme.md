@@ -1,35 +1,13 @@
 # jedahan's Mavericks setup
 
-`./engage.sh` will set osx preferences, install applications, install dotfiles and set application defaults
-
-Requirements
-  * OSX 10.9.1
+`./engage.sh` will set osx preferences, install applications, install dotfiles and set application defaults. You can do each of these individually with `preferences.sh`, `applications.sh`, `dotfiles.sh`, and `defaults.sh`. You will want to change some of the variables in `preferences.sh` (like your hostname), and `defaults.sh` (like your homesick respositoy).
 
 Todo
-  * starcraft install
-  * textual install
-  * twitter install
-  * xcode install
 
-  * sublime text install
-  * sublime text preferences
-  * sublime text package manager
-
-  * dropbox black icon
-
-  * totalfinder no menu bar icon
-
-  * system hide time machine from menu bar
-  * system hide bluetooth from menu bar
-  * system turn bluetooth off
-
-  * alfred look for /opt/homebrew-cask/Caskroom path
-
-  * textual username
-  * textual freenode
-  * textual openframworks
-
-  * finder smb://sgidevap00/www + dahanj login
-
-  * alfred powerpack registration
-  * dev doctor for alfred
+* app store install textual, twitter
+* sublime text install, preferences, package manager
+* dropbox black icon
+* textual username, server and channels
+* finder remote logins
+* alfred powerpack registration
+* alfred dev doctor install

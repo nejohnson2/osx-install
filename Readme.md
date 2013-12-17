@@ -1,10 +1,9 @@
-# jedahan's Mountain Lion setup
+# jedahan's Mavericks setup
 
 `./engage.sh` will set osx preferences, install applications, install dotfiles and set application defaults
 
 Requirements
-  * OSX 10.8.4
-  * [xcode cli tools](http://connect.apple.com)
+  * OSX 10.9.1
 
 Todo
   * starcraft install

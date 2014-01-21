@@ -15,7 +15,7 @@ brew install git --with-pcre
 brew install --disable-etcdir zsh
 
 # Install applications
-$apps = 'alfred arduino chromium daisydisk dropbox firefox gimp iterm2 skype sublime-text supercollider transmission virtualbox wireshark xquartz'
+$apps = 'alfred arduino chromium daisydisk dropbox firefox gimp iterm2 skype supercollider transmission virtualbox wireshark xquartz'
 $languages = 'python ruby'
 $clis = 'android-sdk deliver grc hub mongodb nmap node redis the_silver_searcher trash watch'
 $npm_clis = 'coffee-script meteorite police'

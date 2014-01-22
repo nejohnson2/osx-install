@@ -14,6 +14,9 @@ brew tap gerhard/homebrew-deliver
 brew install git --with-pcre
 brew install --disable-etcdir zsh
 
+# Install pip
+sudo easy_install pip
+
 # Install applications
 $apps = 'alfred arduino chromium daisydisk dropbox firefox gimp iterm2 skype supercollider transmission virtualbox wireshark xquartz'
 $languages = 'python ruby'

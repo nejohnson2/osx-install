@@ -23,7 +23,7 @@ $languages = 'python ruby'
 $clis = 'android-sdk deliver grc hub mongodb nmap node redis the_silver_searcher trash watch'
 $npm_clis = 'coffee-script meteorite police'
 $pips = 'httpie'
-$rubygems = 'foreman homesick lolcat lolcommits'
+$rubygems = 'bro foreman homesick lolcat lolcommits'
 $quicklook_plugins = 'qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package'
 $screensavers = 'alib1'
 

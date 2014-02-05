@@ -7,6 +7,9 @@ scutil --set HostName $name
 scutil --set LocalHostName $name
 defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $name
 
+## Set screensaver
+defaults -currentHost write com.apple.screensaver modulePath -string "~/Library/Screen Savers/ALib1 (Presstube).saver"
+
 ## Input Devices
 
 # Enable tap to click for this user and for the login screen

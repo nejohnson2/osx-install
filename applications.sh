@@ -25,8 +25,10 @@ $npm_clis = 'coffee-script meteorite police'
 $pips = 'httpie'
 $rubygems = 'foreman homesick lolcat lolcommits'
 $quicklook_plugins = 'qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package'
+$screensavers = 'alib1'
 
 for app in $apps; do brew cask install $app; done
+for screensaver in $screensavers; do brew cask install $screensaver; done
 for language in $languages; do brew install $language; done
 for cli in $clis; do brew install $cli; done
 for npm_cli in $npm_clis; do npm install -g $npm_cli; done

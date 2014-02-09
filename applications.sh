@@ -20,7 +20,7 @@ sudo easy_install pip
 # Install applications
 $apps = 'alfred arduino chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz'
 $languages = 'python ruby'
-$clis = 'android-sdk deliver grc hub mongodb nmap node redis the_silver_searcher trash watch'
+$clis = 'android-sdk deliver grc hub lnav mongodb nmap node redis the_silver_searcher trash watch'
 $npm_clis = 'coffee-script police'
 $pips = 'httpie'
 $rubygems = 'bro foreman homesick lolcat lolcommits'

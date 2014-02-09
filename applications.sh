@@ -21,7 +21,7 @@ sudo easy_install pip
 $apps = 'alfred arduino chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz'
 $languages = 'python ruby'
 $clis = 'android-sdk deliver grc hub mongodb nmap node redis the_silver_searcher trash watch'
-$npm_clis = 'coffee-script meteorite police'
+$npm_clis = 'coffee-script police'
 $pips = 'httpie'
 $rubygems = 'bro foreman homesick lolcat lolcommits'
 $quicklook_plugins = 'qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package'

@@ -2,54 +2,52 @@
 
 Shell scripts for automated OSX machine setup.
 
-`./engage.sh` will set osx preferences, install applications, install dotfiles and set application defaults. You can do each of these individually with `preferences.sh`, `applications.sh`, `dotfiles.sh`, and `defaults.sh`. You will want to change some of the variables in `preferences.sh` (like your hostname), and `defaults.sh` (like your homesick respositoy).
+`./engage.sh` will set osx preferences, install applications, install dotfiles and set application preferences. You will want to change some variables in `preferences.sh` (like $hostname), `applications.sh` (like $clis and $apps), and `defaults.sh` (like $homesick_repository).
 
-## Features
+## Installed software:
 
-* Configure default OSX settings with `defaults.sh` 
 * Install the following software through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask) with `applications.sh`:
-    * [Zsh](www.zsh.org/‎)
-    * [Prezto](https://github.com/sorin-ionescu/prezto)
-    * [Git](http://git-scm.com)
-    * [Hub](https://github.com/defunkt/hub)
-    * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
-    * [ImageMagick](http://www.imagemagick.org)
-    * [Node.js](http://nodejs.org)
-    * [Redis](http://redis.io)
-    * [lnav](http://braumeister.org/formula/lnav)
-    * deliver grc hub lnav mongodb nmap node redis the_silver_searcher trash watch police httpie android-sdk foreman homesick lolcat lolcommits
-    * A bunch of quicklook plugins
-    * The alib1 screensaver by presstube
 
-* Downloads, installs, and configures software applications generally not in the [App Store](http://www.apple.com/macosx/whats-new/app-store.html):
-    * [Dropbox](https://www.dropbox.com)
-    * [Knox](https://agilebits.com/knox)
-    * [iTerm2](http://www.iterm2.com)
-    * [Sublime Text 3](http://www.sublimetext.com/3)
-    * [Alfred](http://www.alfredapp.com)
-    * [TextExpander](http://www.smilesoftware.com/TextExpander)
-    * [Path Finder](http://cocoatech.com)
-    * [Firefox](http://www.mozilla.com/en-US/firefox)
-    * [VLC](http://www.videolan.org/vlc)
-    * [Cheatsheet](http://www.cheatsheetapp.com/CheatSheet)
-    * [VirtualBox](https://www.virtualbox.org)
-    * [App Cleaner](http://www.freemacsoft.net/appcleaner)
-    * [Hazel](http://www.noodlesoft.com/hazel.php)
-    * [Air Display](http://avatron.com/apps/air-display)
-    * alfred arduino chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz
+    commandline software:
 
-* Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
+    [Zsh](www.zsh.org/‎), 
+    [Prezto](https://github.com/sorin-ionescu/prezto), 
+    [Git](http://git-scm.com), 
+    [Hub](https://github.com/defunkt/hub), 
+    [The Silver Searcher](https://github.com/ggreer/the_silver_searcher), 
+    [ImageMagick](http://www.imagemagick.org),
+    [Node.js](http://nodejs.org),
+    [Redis](http://redis.io),
+    [lnav](http://braumeister.org/formula/lnav),
+    deliver, grc, lnav, mongodb, nmap, trash, watch, police, httpie, android-sdk, foreman, homesick, lolcat, lolcommits
+
+    gui software:
+
+    quicklook plugins, alib1 screensaver, 
+    , [Dropbox](https://www.dropbox.com)
+    , [Knox](https://agilebits.com/knox)
+    , [iTerm2](http://www.iterm2.com)
+    , [Sublime Text 3](http://www.sublimetext.com/3)
+    , [Alfred](http://www.alfredapp.com)
+    , [TextExpander](http://www.smilesoftware.com/TextExpander)
+    , [Path Finder](http://cocoatech.com)
+    , [Firefox](http://www.mozilla.com/en-US/firefox)
+    , [VLC](http://www.videolan.org/vlc)
+    , [Cheatsheet](http://www.cheatsheetapp.com/CheatSheet)
+    , [VirtualBox](https://www.virtualbox.org)
+    , [App Cleaner](http://www.freemacsoft.net/appcleaner)
+    , [Hazel](http://www.noodlesoft.com/hazel.php)
+    , [Air Display](http://avatron.com/apps/air-display)
+    , arduino chromium daisydisk dogecoin skype transmission wireshark xquartz
+
+    and dotfiles:
+        * Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 
 # Requirements
 
 0. [OSX](http://www.apple.com/osx)
 1. [OSX Software Updates](http://www.apple.com/osx)
 2. [Xcode](https://developer.apple.com/downloads)
-
-Current Version:
-
-    git clone git://github.com/jedahan/osx.git
-    cd osx
 
 # Usage
 

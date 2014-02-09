@@ -4,11 +4,11 @@ Shell scripts for automated OSX machine setup.
 
 `./engage.sh` will set osx preferences, install applications, install dotfiles and set application preferences. You will want to change some variables in `preferences.sh` (like $hostname), `applications.sh` (like $clis and $apps), and `defaults.sh` (like $homesick_repository).
 
-### Software:
+## Software
 
 Install the following software through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask) with `applications.sh`:
 
-#### commandline software:
+### commandline software
 
 [Zsh](www.zsh.org/‎), 
 [Prezto](https://github.com/sorin-ionescu/prezto), 
@@ -21,7 +21,7 @@ Install the following software through [Homebrew](http://brew.sh) and [Homebrew 
 [lnav](http://braumeister.org/formula/lnav),
 deliver, grc, lnav, mongodb, nmap, trash, watch, police, httpie, android-sdk, foreman, homesick, lolcat, lolcommits
 
-#### gui software:
+### gui software
 
 quicklook plugins
 , alib1 screensaver
@@ -41,17 +41,17 @@ quicklook plugins
 , [Air Display](http://avatron.com/apps/air-display)
 , arduino chromium daisydisk dogecoin skype transmission wireshark xquartz
 
-#### dotfiles:
+### dotfiles
 
 Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 
-### Requirements
+## Requirements
 
 0. [OSX](http://www.apple.com/osx)
 1. [OSX Software Updates](http://www.apple.com/osx)
 2. [Xcode](https://developer.apple.com/downloads)
 
-### Usage
+## Usage
 
 Edit any of the *.sh files in the scripts folder to your liking and then open a terminal window to execute the following command:
 
@@ -65,20 +65,20 @@ Running the engage.sh script will ask for your root password, and then:
     d: Install application extensions (i.e. add-ons, plug-ins, etc.)
     e: Apply application preferences and defaults.
 
-### Customization
+## Customization
 
 While the default settings for this project are opinionated and tailored for my specific setup, you can easily fork
 this project and customize the settings to your specific environment. Start by editing the files located in the
 settings project:
 
-### App Store Software
+## App Store Software
 
 I also recommend installing the following software found via the
 [App Store](http://www.apple.com/macosx/whats-new/app-store.html):
 
 * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
 
-### Post Install Checklist
+## Post Install Checklist
 
 The following is a checklist of additional steps worth completing after the scripts have been executed:
 

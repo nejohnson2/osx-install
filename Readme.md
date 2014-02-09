@@ -15,9 +15,12 @@ Shell scripts for automated OSX machine setup.
     * [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
     * [ImageMagick](http://www.imagemagick.org)
     * [Node.js](http://nodejs.org)
-    * [Dotfiles](https://github.com/jedahan/dotfiles)
     * [Redis](http://redis.io)
     * [lnav](http://braumeister.org/formula/lnav)
+    * deliver grc hub lnav mongodb nmap node redis the_silver_searcher trash watch police httpie android-sdk foreman homesick lolcat lolcommits
+    * A bunch of quicklook plugins
+    * The alib1 screensaver by presstube
+
 * Downloads, installs, and configures software applications generally not in the [App Store](http://www.apple.com/macosx/whats-new/app-store.html):
     * [Dropbox](https://www.dropbox.com)
     * [Knox](https://agilebits.com/knox)
@@ -33,6 +36,9 @@ Shell scripts for automated OSX machine setup.
     * [App Cleaner](http://www.freemacsoft.net/appcleaner)
     * [Hazel](http://www.noodlesoft.com/hazel.php)
     * [Air Display](http://avatron.com/apps/air-display)
+    * alfred arduino chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz
+
+* Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 
 # Requirements
 
@@ -53,21 +59,17 @@ Edit any of the *.sh files in the scripts folder to your liking and then open a 
 
 Running the engage.sh script will ask for your root password, and then:
 
-    b: Apply basic system settings.
-    h: Install Homebrew software (i.e. non-GUI, command line interfaces).
-    a: Install application software (i.e. GUI-enabled).
-    x: Install application extensions (i.e. enhancements, add-ons, plug-ins, etc.)
-    d: Apply system and application defaults.
-    p: Apply software preferences.
-    s: Setup installed software.
+    a: Apply system preferences and defaults.
+    b: Install commandline software
+    c: Install application software
+    d: Install application extensions (i.e. add-ons, plug-ins, etc.)
+    e: Apply application preferences and defaults.
 
 ## Customization
 
 While the default settings for this project are opinionated and tailored for my specific setup, you can easily fork
 this project and customize the settings to your specific environment. Start by editing the files located in the
 settings project:
-
-* settings/settings.sh = Defines settings for machine name, applications, extensions, versions, paths, etc.
 
 ## App Store Software
 
@@ -87,8 +89,3 @@ The following is a checklist of additional steps worth completing after the scri
 * Configure Wi-Fi.
 * Configure work email and calendar accounts.
 * Configure previously installed applications.
-
-# Resources
-
-* [Boxen](http://boxen.github.com) - GitHub's automated development setup.
-* [Mathias Bynens' OSX Defaults](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) - OSX/application defaults.

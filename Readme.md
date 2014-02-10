@@ -32,6 +32,7 @@ Running the engage.sh script will ask for your root password, and then:
 [Redis](http://redis.io),
 [lnav](http://braumeister.org/formula/lnav),
 deliver, grc, lnav, mongodb, nmap, trash, watch, police, httpie, android-sdk, foreman, homesick, lolcat, lolcommits
+LaunchRocket preference pane for managing homebrew services
 
 ### gui software
 

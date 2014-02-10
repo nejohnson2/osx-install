@@ -13,6 +13,9 @@ brew tap gerhard/homebrew-deliver
 # Install latest git and zsh
 brew install git --with-pcre
 brew install --disable-etcdir zsh
+# Install launchrocket for homebrew services
+brew tap jimbojsb/launchrocket
+brew cask install launchrocket
 
 # Install pip
 sudo easy_install pip

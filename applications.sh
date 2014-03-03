@@ -16,12 +16,11 @@ brew install --disable-etcdir zsh
 # Install launchrocket for homebrew services
 brew tap jimbojsb/launchrocket
 brew cask install launchrocket
-
 # Install pip
 sudo easy_install pip
 
 # Install applications
-$apps = 'alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz'
+$apps = 'alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox iterm2 skype caskroom-versions/sublime-text3 transmission virtualbox wireshark xquartz'
 $languages = 'python ruby'
 $clis = 'android-sdk deliver grc hub imagemagick lnav mongodb nmap node redis the_silver_searcher trash watch'
 $npm_clis = 'coffee-script police'

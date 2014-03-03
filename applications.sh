@@ -1,3 +1,6 @@
+# Update software
+sudo softwareupdate --install --all
+
 # Install xcode commandline tools
 sudo xcode-select --install
 sudo xcodebuild -license

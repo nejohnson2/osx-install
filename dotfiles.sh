@@ -17,9 +17,7 @@ homesick clone jedahan/dotfiles && homesick symlink jedahan/dotfiles
 chsh -s /bin/zsh
 
 # Install sublime text 3 package control
-$sublime_support_dir='~/Library/Application\ Support/Sublime\ Text\ 3/'
-curl 'https://sublime.wbond.net/Package Control.sublime-package' -o ${sublime_support_dir}/Installed\ Packages/Package\ Control.sublime-package
-ln -s ~/.sublime/Package\ Control.sublime-settings ${sublime_support_dir}/Packages/User/
+./sublime.zsh
 
 ## Set bootlogo
 sudo cp boot/{BootLogo.png,DefaultDesktop.jpg} /System/Library/CoreServices/

@@ -23,7 +23,7 @@ brew cask install launchrocket
 easy_install curdling
 
 # Install applications
-apps = 'alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox iterm2 skype caskroom-versions/sublime-text3 transmission virtualbox wireshark xquartz'
+apps = 'alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz'
 languages = 'python ruby'
 clis = 'android-sdk deliver grc hub imagemagick lnav mongodb nmap node redis the_silver_searcher trash watch'
 npm_clis = 'coffee-script police'

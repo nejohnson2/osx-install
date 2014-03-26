@@ -41,7 +41,6 @@ quicklook plugins
 , [Dropbox](https://www.dropbox.com)
 , [Knox](https://agilebits.com/knox)
 , [iTerm2](http://www.iterm2.com)
-, [Sublime Text 3](http://www.sublimetext.com/3)
 , [Alfred](http://www.alfredapp.com)
 , [TextExpander](http://www.smilesoftware.com/TextExpander)
 , [Path Finder](http://cocoatech.com)
@@ -52,7 +51,7 @@ quicklook plugins
 , [App Cleaner](http://www.freemacsoft.net/appcleaner)
 , [Hazel](http://www.noodlesoft.com/hazel.php)
 , [Air Display](http://avatron.com/apps/air-display)
-, arduino chromium daisydisk dogecoin skype transmission wireshark xquartz
+, arduino chromium daisydisk dogecoin skype transmission virtualbox wireshark xquartz
 
 ### dotfiles
 
@@ -66,6 +65,7 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 
 ## Post Install Checklist
 
+* Install [atom](http://atom.io)
 * Install [App Store](http://www.apple.com/macosx/whats-new/app-store.html) software:
     * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
 * Configure Security & Privacy:

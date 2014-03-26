@@ -20,14 +20,14 @@ brew install --disable-etcdir zsh
 brew tap jimbojsb/launchrocket
 brew cask install launchrocket
 # Install pip
-sudo easy_install pip
+easy_install curdling
 
 # Install applications
 apps = 'alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox iterm2 skype caskroom-versions/sublime-text3 transmission virtualbox wireshark xquartz'
 languages = 'python ruby'
 clis = 'android-sdk deliver grc hub imagemagick lnav mongodb nmap node redis the_silver_searcher trash watch'
 npm_clis = 'coffee-script police'
-pips = 'beets httpie'
+pys = 'beets httpie'
 rubygems = 'bro foreman homesick lolcat lolcommits'
 quicklook_plugins = 'qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package'
 screensavers = 'alib1'
@@ -37,6 +37,6 @@ for screensaver in $screensavers; do brew cask install $screensaver; done
 for language in $languages; do brew install $language; done
 for cli in $clis; do brew install $cli; done
 for npm_cli in $npm_clis; do npm install -g $npm_cli; done
-for pip in $pips; do pip install $pip; done
+for py in $pys; do curd install $py; done
 for rubygem in $rubygems; do gem install $rubygem; done
 for quicklook in $quicklook_plugins; do brew cask install $plugin; done && qlmanage -r

@@ -76,3 +76,4 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Require password immediately after sleep or screen saver begins in Security & Privacy
 * Configure work email and calendar accounts
 * Add [k](https://github.com/supercrabtree/k)
+* Install [virtualbox extension pack](https://www.virtualbox.org/wiki/Downloads)

@@ -1,20 +1,18 @@
 # jedahan's Mavericks setup
 
-Shell scripts for automated OSX machine setup.
+Shell scripts for automated OSX machine setup. Requires [Xcode](https://developer.apple.com/downloads) and a network connection.
 
 ## Usage
 
-Edit any of the *.sh files in the scripts folder to your liking and then open a terminal window to execute the following command:
+Edit any of the *.sh files in the scripts folder to your liking and then run `engage.sh` in your terminal
 
-    ./engage.sh
+`engage.sh` will ask for your root password, and then:
 
-Running the engage.sh script will ask for your root password, and then:
-
-    a: Apply system preferences (like hostname)
-    b: Install commandline software (through homebrew)
-    c: Install application software (through homebrew cask)
-    d: Install application extensions (i.e. add-ons, plug-ins, etc.)
-    e: Apply application preferences
+  1. Apply system preferences (like hostname)
+  2. Install commandline software (through homebrew)
+  3. Install application software (through homebrew cask)
+  4. Install application extensions (i.e. add-ons, plug-ins, etc.)
+  5. Apply application preferences
 
 ## Software
 
@@ -22,17 +20,26 @@ Running the engage.sh script will ask for your root password, and then:
 
 ### commandline software
 
-[Zsh](www.zsh.org/‎), 
-[Prezto](https://github.com/sorin-ionescu/prezto), 
-[Git](http://git-scm.com), 
-[Hub](https://github.com/defunkt/hub), 
-[The Silver Searcher](https://github.com/ggreer/the_silver_searcher), 
-[ImageMagick](http://www.imagemagick.org),
-[Node.js](http://nodejs.org),
-[Redis](http://redis.io),
-[lnav](http://braumeister.org/formula/lnav),
-deliver, grc, lnav, mongodb, nmap, trash, watch, police, httpie, android-sdk, foreman, homesick, lolcat, lolcommits
-LaunchRocket preference pane for managing homebrew services
+[Zsh](www.zsh.org/‎)
+, [Prezto](https://github.com/sorin-ionescu/prezto)
+, [Git](http://git-scm.com)
+, [Hub](https://github.com/defunkt/hub)
+, [The Silver Searcher](https://github.com/ggreer/the_silver_searcher)
+, [ImageMagick](http://www.imagemagick.org)
+, [Node.js](http://nodejs.org)
+, [Redis](http://redis.io)
+, [lnav](http://braumeister.org/formula/lnav)
+, [deliver](https://github.com/gerhard/deliver)
+, [mongodb](https://mongodb.org)
+, [nmap](nmap.org)
+, [trash](http://hasseg.org/trash/)
+, [watch](http://procps.sourceforge.net/)
+, [httpie](httpie.org), android-sdk
+, [foreman]()
+, [homesick]()
+, [lolcat]()
+, [lolcommits]()
+, [LaunchRocket]()
 
 ### gui software
 
@@ -51,27 +58,25 @@ quicklook plugins
 , [App Cleaner](http://www.freemacsoft.net/appcleaner)
 , [Hazel](http://www.noodlesoft.com/hazel.php)
 , [Air Display](http://avatron.com/apps/air-display)
-, arduino chromium daisydisk dogecoin skype transmission virtualbox wireshark xquartz
+, [arduino](arduino.cc)
+, [chromium]()
+, [daisydisk]()
+, [dogecoin]()
+, [skype]()
+, [transmission]()
+, [virtualbox]()
+, [wireshark]()
+, [xquartz]()
 
 ### dotfiles
 
 Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
-
-## Requirements
-
-0. [OSX](http://www.apple.com/osx)
-1. [OSX Software Updates](http://www.apple.com/osx)
-2. [Xcode](https://developer.apple.com/downloads)
 
 ## Post Install Checklist
 
 * Install [atom](http://atom.io)
 * Install [App Store](http://www.apple.com/macosx/whats-new/app-store.html) software:
     * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
-* Configure Security & Privacy:
-    * Require password immediately after sleep or screen saver begins.
-    * Show a message when the screen is locked. Example: "<twitter> | <email> | <phone>"
-    * Enable FileVault.
-* Configure Wi-Fi.
-* Configure work email and calendar accounts.
-* Configure previously installed applications.
+    * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
+* Require password immediately after sleep or screen saver begins in Security & Privacy
+* Configure work email and calendar accounts

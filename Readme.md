@@ -9,9 +9,8 @@ Edit any of the *.sh files in the scripts folder to your liking and then run `en
 `engage.sh` will ask for your root password, and then:
 
   1. Apply system preferences (like hostname)
-  2. Install commandline software (through homebrew)
-  3. Install application software (through homebrew cask)
-  4. Install application extensions (i.e. add-ons, plug-ins, etc.)
+  2. Install commandline and gui software
+  3. Install application extensions, add-ons, and plug-ins
   5. Apply application preferences
 
 ## Software
@@ -28,7 +27,7 @@ Edit any of the *.sh files in the scripts folder to your liking and then run `en
 , [ImageMagick](http://www.imagemagick.org)
 , [Node.js](http://nodejs.org)
 , [Redis](http://redis.io)
-, [lnav](http://braumeister.org/formula/lnav)
+, [beets]()
 , [deliver](https://github.com/gerhard/deliver)
 , [mongodb](https://mongodb.org)
 , [nmap](nmap.org)
@@ -49,15 +48,11 @@ quicklook plugins
 , [Knox](https://agilebits.com/knox)
 , [iTerm2](http://www.iterm2.com)
 , [Alfred](http://www.alfredapp.com)
-, [TextExpander](http://www.smilesoftware.com/TextExpander)
-, [Path Finder](http://cocoatech.com)
 , [Firefox](http://www.mozilla.com/en-US/firefox)
 , [VLC](http://www.videolan.org/vlc)
 , [Cheatsheet](http://www.cheatsheetapp.com/CheatSheet)
 , [VirtualBox](https://www.virtualbox.org)
 , [App Cleaner](http://www.freemacsoft.net/appcleaner)
-, [Hazel](http://www.noodlesoft.com/hazel.php)
-, [Air Display](http://avatron.com/apps/air-display)
 , [arduino](arduino.cc)
 , [chromium]()
 , [daisydisk]()

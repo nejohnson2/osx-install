@@ -4,31 +4,23 @@ sudo softwareupdate --install --all
 # Install xcode commandline tools
 sudo xcode-select --install
 sudo xcodebuild -license
-# Install homebrew
+# Install package managers homebrew, homebrew cask, and curdling (for python)
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"
-
-# Install homebrew cask
 brew tap phinze/homebrew-cask
 brew install brew-cask
-# Tap dupes and deliver
-brew tap homebrew/dupes
-brew tap gerhard/homebrew-deliver
-# Install latest git and zsh
-brew install git --with-pcre
-brew install --disable-etcdir zsh
-# Install launchrocket for homebrew services
-brew tap jimbojsb/launchrocket
-brew cask install launchrocket
-# Install pip
 easy_install curdling
 
 # Install applications
+brew install --disable-etcdir zsh # because osx is misconfigured
+brew tap gerhard/homebrew-deliver # for deliver
+brew tap homebrew/dupes # for ruby
+
 apps = 'alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox iterm2 skype transmission virtualbox wireshark xquartz'
 languages = 'python ruby'
-clis = 'android-sdk deliver hub imagemagick mongodb nmap node redis the_silver_searcher trash watch'
+clis = 'android-sdk deliver git hub imagemagick mongodb nmap node redis the_silver_searcher trash watch'
 npm_clis = 'coffee-script-redux'
 pys = 'beets httpie'
-rubygems = 'bro foreman homesick lolcat lolcommits'
+rubygems = 'foreman homesick lolcat lolcommits'
 quicklook_plugins = 'qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package'
 screensavers = 'alib1'
 

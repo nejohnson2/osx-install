@@ -18,3 +18,11 @@ chsh -s /bin/zsh
 
 ## Set bootlogo
 sudo cp boot/{BootLogo.png,DefaultDesktop.jpg} /System/Library/CoreServices/
+
+## Set *.dev to resolve to 127.0.0.1
+brew install dnsmasq
+echo 'address=/.dev/127.0.0.1' > $(brew --prefix)/etc/dnsmasq.conf
+sudo cp -v $(brew --prefix dnsmasq)/homebrew.mxcl.dnsmasq.plist /Library/LaunchDaemons
+sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+sudo mkdir -v /etc/resolver
+sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'

@@ -16,8 +16,5 @@ homesick clone jedahan/dotfiles && homesick symlink jedahan/dotfiles
 ## Set shell to zshell
 chsh -s /bin/zsh
 
-# Install sublime text 3 package control
-./sublime.zsh
-
 ## Set bootlogo
 sudo cp boot/{BootLogo.png,DefaultDesktop.jpg} /System/Library/CoreServices/

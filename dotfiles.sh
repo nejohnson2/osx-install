@@ -8,7 +8,12 @@ curl http://levien.com/type/myfonts/Inconsolata.otf -o ${HOME}/Library/Fonts/Inc
 defaults write com.googlecode.iterm2 PrefsCustomFolder -string "/Users/jedahan/.iterm2"
 
 ## Install prezto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+local pdir="${ZDOTDIR:-$HOME}/.zprezto"
+git clone --recursive https://github.com/sorin-ionescu/prezto.git $pdir
+pushd $pdir/modules
+git submodule add https://github.com/sindresorhus/pure.git pure
+ln -s $pdir/modules/pure/pure.zsh prompt/functions/prompt_pure_setup
+popd
 
 ## Symlink dotfiles
 homesick clone jedahan/dotfiles && homesick symlink jedahan/dotfiles

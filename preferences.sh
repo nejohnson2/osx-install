@@ -13,7 +13,7 @@ name="talon"
 sudo nvram SystemAudioVolume=%80
 
 # Disable volume feedback
-defaults write "Apple Global Domain" com.apple.sound.beep.feedback -int 0
+defaults write -globalDomain com.apple.sound.beep.feedback -int 0
 
 ## Input Devices
 
@@ -24,7 +24,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 ## User Interface
 
 # Disable auto-correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+defaults write -globalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Disable the dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean YES
@@ -33,7 +33,7 @@ defaults write com.apple.dashboard mcx-disabled -boolean YES
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Disable opening and closing window animations
-defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool false
+defaults write -globalDomain NSAutomaticWindowAnimationsEnabled -bool false
 
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
@@ -81,7 +81,7 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 defaults write com.apple.finder NewWindowTargetPath -string "file://localhost/Users/jedahan/Dropbox/"
 
 # Finder: Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write -globalDomain AppleKeyboardUIMode -int 3
 
 # Finder: Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
 defaults write com.apple.finder QuitMenuItem -bool true

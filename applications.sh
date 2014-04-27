@@ -1,7 +1,8 @@
 # Update software
 sudo softwareupdate --install --all
 
-# Install xcode commandline tools
+# Install xcode and commandline tools (be sure to choose 'Get Xcode')
+xcode-select --install
 sudo xcode-select --switch /Library/Developer/CommandLineTools/
 sudo xcodebuild -license
 # Install package managers homebrew, homebrew cask, and curdling (for python)

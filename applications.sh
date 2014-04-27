@@ -2,7 +2,7 @@
 sudo softwareupdate --install --all
 
 # Install xcode commandline tools
-sudo xcode-select --install
+sudo xcode-select --switch /Library/Developer/CommandLineTools/
 sudo xcodebuild -license
 # Install package managers homebrew, homebrew cask, and curdling (for python)
 ruby -e "$(curl -fsSkL raw.github.com/mxcl/homebrew/go)"

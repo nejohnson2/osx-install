@@ -1,6 +1,3 @@
-# Twitter: increase font size
-defaults write com.twitter.twitter-mac FontSize 14
-
 # Transmission: Trash original torrent files
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 # Transmission: Hide the donate and legal messages

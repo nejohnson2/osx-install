@@ -109,7 +109,7 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 chflags nohidden ~/Library
 
 # Disable Gatekeeper
-sudo spctl --master-disable
+[[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
 
 ## Cleanup
 

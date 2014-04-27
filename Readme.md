@@ -84,3 +84,4 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Install alfred powerpack
     * Get alfred working with homebrew cask installed apps
 * Enable accessibility for zooming
+* Generate/install ssh keys

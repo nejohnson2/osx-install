@@ -16,7 +16,7 @@ ln -s $pdir/modules/pure/pure.zsh prompt/functions/prompt_pure_setup
 popd
 
 ## Symlink dotfiles
-homesick clone jedahan/dotfiles && homesick symlink jedahan/dotfiles
+homesick clone jedahan/dotfiles && homesick symlink dotfiles
 
 ## Set shell to zshell
 chsh -s /bin/zsh

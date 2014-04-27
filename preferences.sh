@@ -9,6 +9,12 @@ name="talon"
   defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $name
 }
 
+# Disable startup sound
+sudo nvram SystemAudioVolume=%80
+
+# Disable volume feedback
+defaults write "Apple Global Domain" com.apple.sound.beep.feedback -int 0
+
 ## Input Devices
 
 # Enable tap to click for this user and for the login screen

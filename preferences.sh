@@ -18,8 +18,8 @@ defaults write -globalDomain com.apple.sound.beep.feedback -int 0
 ## Input Devices
 
 # Enable tap to click for this user and for the login screen
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
+defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
 
 ## User Interface
 
@@ -27,7 +27,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write -globalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
 # Disable the dashboard
-defaults write com.apple.dashboard mcx-disabled -boolean YES
+defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false

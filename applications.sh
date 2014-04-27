@@ -23,7 +23,7 @@ brew -v && {
   brew tap gerhard/homebrew-deliver # for deliver
   brew tap homebrew/dupes # for ruby
 
-  apps='alfred arduino cheatsheet chromium daisydisk dogecoin dropbox firefox-beta iterm2-beta skype transmission virtualbox wireshark xquartz'
+  apps='alfred arduino atom cheatsheet chromium daisydisk dogecoin dropbox firefox-beta iterm2-beta skype transmission virtualbox wireshark xquartz'
   languages='python ruby'
   clis='android-sdk deliver git hub imagemagick mongodb nmap node redis the_silver_searcher trash watch'
   npm_clis='coffee-script-redux'

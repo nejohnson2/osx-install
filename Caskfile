@@ -1,0 +1,34 @@
+# Install gui applications with homebrew-cask
+tap phinze/homebrew-cask
+install brew-cask
+tap caskroom/versions # for firefox and iterm2 betas
+
+cask install alfred
+cask install arduino
+cask install atom
+cask install cheatsheet
+cask install chromium
+cask install daisydisk
+cask install dogecoin
+cask install dropbox
+cask install firefox-beta
+cask install iterm2-beta
+cask install skype
+cask install transmission
+cask install virtualbox
+cask install wireshark
+cask install xquartz
+
+cask install qlcolorcode
+cask install qlstephen
+cask install qlmarkdown
+quicklook-json
+cask install qlprettypatch
+quicklook-csv
+cask install betterzipql
+webp-quicklook
+suspicious-package
+for app in $apps; do brew cask install $app; done
+
+# Remove outdated versions from the cellar
+cleanup

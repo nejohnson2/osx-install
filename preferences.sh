@@ -122,5 +122,5 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 ## Cleanup
 
 # Kill affected applications
-for app in Finder Dock SystemUIServer; do killall "$app" > /dev/null 2>&1; done
+for app in Finder Dock SystemUIServer cfprefsd; do killall "$app" > /dev/null 2>&1; done
 echo "Done. Note that some of these changes require a logout/restart to take effect."

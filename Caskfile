@@ -19,16 +19,16 @@ cask install virtualbox
 cask install wireshark
 cask install xquartz
 
+# quicklook plugins
 cask install qlcolorcode
 cask install qlstephen
 cask install qlmarkdown
-quicklook-json
+cask install quicklook-json
 cask install qlprettypatch
-quicklook-csv
+cask install quicklook-csv
 cask install betterzipql
-webp-quicklook
-suspicious-package
-for app in $apps; do brew cask install $app; done
+cask install webp-quicklook
+cask install suspicious-package
 
 # Remove outdated versions from the cellar
 cleanup

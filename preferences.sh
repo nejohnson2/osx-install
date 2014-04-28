@@ -32,9 +32,6 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Disable opening and closing window animations
-defaults write -globalDomain NSAutomaticWindowAnimationsEnabled -bool false
-
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 

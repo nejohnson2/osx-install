@@ -3,12 +3,12 @@ tap phinze/homebrew-cask
 install brew-cask
 tap caskroom/versions # for firefox and iterm2 betas
 
+# applications
 cask install alfred
 cask install arduino
 cask install atom
 cask install cheatsheet
 cask install chromium
-cask install daisydisk
 cask install dogecoin
 cask install dropbox
 cask install firefox-beta

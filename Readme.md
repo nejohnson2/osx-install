@@ -70,7 +70,6 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
     * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
 * Require password immediately after sleep or screen saver begins in Security & Privacy
 * Configure work email and calendar accounts
-* Add [k](https://github.com/supercrabtree/k)
 * Install [virtualbox extension pack](https://www.virtualbox.org/wiki/Downloads)
 * Install obsidian menu bar
     * Customize dropbox and twitter icons

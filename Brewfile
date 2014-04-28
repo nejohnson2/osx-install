@@ -18,6 +18,7 @@ install jq
 install mongodb
 install nmap
 install node
+install opencv --with-qt
 install redis
 install ssh-copy-id
 install the_silver_searcher

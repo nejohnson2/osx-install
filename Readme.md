@@ -34,6 +34,7 @@ Neat things about this setup:
 , [mongodb](mongodb.org)
 , [nmap](nmap.org)
 , [node](nodejs.org)
+, [opencv](opencv.org)
 , [python](python.org)
 , [redis](redis.io)
 , [ruby](ruby-lang.org)

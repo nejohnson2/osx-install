@@ -23,3 +23,6 @@ install the_silver_searcher
 install trash
 install watch
 install --disable-etcdir zsh # because osx is misconfigured
+
+# Remove outdated versions from the cellar
+cleanup

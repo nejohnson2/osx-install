@@ -30,5 +30,5 @@ cask install betterzipql
 cask install webp-quicklook
 cask install suspicious-package
 
-# Remove outdated versions from the cellar
-cleanup
+# Link search paths for alfred
+cask alfred link

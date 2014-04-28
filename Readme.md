@@ -11,7 +11,11 @@ Edit any of the *.sh files in the scripts folder to your liking and then run `en
   1. Apply system preferences (like hostname)
   2. Install commandline and gui software
   3. Install application extensions, add-ons, and plug-ins
-  5. Apply application preferences
+  4. Apply application preferences
+
+Neat things about this setup:
+ - shell will be set to [zsh](zsh.org) with [prezto](github.com/sorin-ionescu/prezto)
+ - *.dev will always resolve to 127.0.0.1 (thanks dnsmasq!)
 
 ## Software
 

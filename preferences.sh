@@ -119,6 +119,9 @@ chflags nohidden ~/Library
 # Disable Gatekeeper
 [[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
 
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
 ## Cleanup
 
 # Kill affected applications

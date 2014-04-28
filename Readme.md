@@ -37,6 +37,7 @@ Neat things about this setup:
 , [python](python.org)
 , [redis](redis.io)
 , [ruby](ruby-lang.org)
+, [ssh-copy-id](openssh.com)
 , [the_silver_searcher](github.com/ggreer/the_silver_searcher)
 , [trash](hasseg.org/trash)
 , [watch](procps.sourceforge.net)

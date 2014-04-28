@@ -19,6 +19,7 @@ install mongodb
 install nmap
 install node
 install redis
+install ssh-copy-id
 install the_silver_searcher
 install trash
 install watch

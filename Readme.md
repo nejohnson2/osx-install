@@ -33,35 +33,29 @@ Edit any of the *.sh files in the scripts folder to your liking and then run `en
 , [nmap](nmap.org)
 , [trash](http://hasseg.org/trash/)
 , [watch](http://procps.sourceforge.net/)
-, [httpie](httpie.org), android-sdk
-, [foreman]()
-, [homesick]()
-, [lolcat]()
-, [lolcommits]()
-, [LaunchRocket]()
+, [httpie](httpie.org)
+, [android-sdk](http://developer.android.com/sdk/index.html?hl=sk)
+, [foreman](https://github.com/ddollar/foreman)
+, [homesick](https://github.com/technicalpickles/homesick)
+, [lolcat](https://github.com/busyloop/lolcat)
+, [lolcommits](https://github.com/mroth/lolcommits)
 
 ### gui software
 
 quicklook plugins
-, alib1 screensaver
-, [Dropbox](https://www.dropbox.com)
-, [Knox](https://agilebits.com/knox)
-, [iTerm2](http://www.iterm2.com)
-, [Alfred](http://www.alfredapp.com)
-, [Firefox](http://www.mozilla.com/en-US/firefox)
-, [VLC](http://www.videolan.org/vlc)
-, [Cheatsheet](http://www.cheatsheetapp.com/CheatSheet)
-, [VirtualBox](https://www.virtualbox.org)
-, [App Cleaner](http://www.freemacsoft.net/appcleaner)
-, [arduino](arduino.cc)
-, [chromium]()
-, [daisydisk]()
-, [dogecoin]()
-, [skype]()
-, [transmission]()
-, [virtualbox]()
-, [wireshark]()
-, [xquartz]()
+, [Alfred](alfredapp.com)
+, [Arduino](arduino.cc)
+, [atom][atom.io]
+, [Cheatsheet](cheatsheetapp.com)
+, [Dogecoin](github.com/dogecoin/dogecoin)
+, [Dropbox](dropbox.com)
+, [Firefox Beta](mozilla.org/beta)
+, [iTerm2 Beta](iterm2.com)
+, [Skype](skype.com)
+, [Transmission](transmissionbt.com/)
+, [Virtualbox](virtualbox.org)
+, [Wireshark](wireshark.org)
+, [XQuartz](xquartz.macosforge.org)
 
 ### dotfiles
 

@@ -14,10 +14,9 @@ brew -v && {
   qlmanage -r
 }
 
-# Install python package manager and applications
-easy_install curdling
-curd install beets
-curd install httpie
+# Install commandline applications
+easy_install beets
+easy_install httpie
 
 # Install coffee-script
 npm install -g coffee-script-redux

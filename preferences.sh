@@ -39,7 +39,7 @@ defaults write -globalDomain NSAutomaticWindowAnimationsEnabled -bool false
 defaults write com.apple.dock autohide -bool true
 
 # Remove default apps from the Dock
-defaults write com.apple.dock persistent-apps -array
+defaults write com.apple.dock persistent-apps -array ""
 
 # Hide Search, Time Machine, User, and Bluetooth icons
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search

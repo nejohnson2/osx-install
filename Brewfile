@@ -14,6 +14,7 @@ install deliver
 install git
 install hub
 install imagemagick
+install jq
 install mongodb
 install nmap
 install node

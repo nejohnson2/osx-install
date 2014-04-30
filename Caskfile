@@ -13,6 +13,7 @@ cask install dogecoin
 cask install dropbox
 cask install firefox-beta
 cask install iterm2-beta
+cask install java
 cask install skype
 cask install transmission
 cask install virtualbox

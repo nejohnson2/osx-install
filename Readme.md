@@ -31,6 +31,7 @@ Neat things about this setup:
 , [gist](github.com/defunkt/gist)
 , [hub](hub.github.com)
 , [imagemagick](imagemagick.org)
+, [java](java.com)
 , [jq](stedolan.github.io/jq)
 , [mongodb](mongodb.org)
 , [nmap](nmap.org)

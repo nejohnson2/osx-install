@@ -12,6 +12,7 @@ install ruby
 install android-sdk
 install deliver
 install git
+install gist
 install hub
 install imagemagick
 install jq

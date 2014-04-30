@@ -28,6 +28,7 @@ Neat things about this setup:
 , [deliver](github.com/gerhard/deliver)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [git](git-scm.com)
+, [gist](github.com/defunkt/gist)
 , [hub](hub.github.com)
 , [imagemagick](imagemagick.org)
 , [jq](stedolan.github.io/jq)

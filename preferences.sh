@@ -113,6 +113,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Control + scroll for zooming
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
+# Ask for password after screen sleeps
+defaults write com.apple.screensaver askForPassword -bool true
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 

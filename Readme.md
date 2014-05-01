@@ -48,7 +48,7 @@ Neat things about this setup:
 
 ### gui software
 
-quicklook plugins
+[quicklook plugins](github.com/sindresorhus/quick-look-plugins)
 , [Alfred](alfredapp.com)
 , [Arduino](arduino.cc)
 , [atom](atom.io)

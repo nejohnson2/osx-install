@@ -80,7 +80,6 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Configure work email and calendar accounts
 * Install alfred powerpack
 * Enable accessibility for zooming
-* Install [virtualbox extension pack](https://www.virtualbox.org/wiki/Downloads)
 * Install obsidian menu bar
     * Customize dropbox and twitter icons
     * Add .menu to login items

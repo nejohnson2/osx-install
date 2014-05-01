@@ -31,3 +31,10 @@ sudo cp -v $(brew --prefix dnsmasq)/homebrew.mxcl.dnsmasq.plist /Library/LaunchD
 sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
 sudo mkdir -v /etc/resolver
 sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
+
+# Install virtualbox extension pack
+virtualbox_version=`vboxmanage --version | cut -d'r' -f1`
+pushd $TMPDIR
+curl -OL "http://download.virtualbox.org/virtualbox/${virtualbox_version}/Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.vbox-extpack"
+vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-${virtualbox_version}.vbox-extpack
+popd

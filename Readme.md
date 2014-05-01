@@ -51,7 +51,7 @@ Neat things about this setup:
 quicklook plugins
 , [Alfred](alfredapp.com)
 , [Arduino](arduino.cc)
-, [atom][atom.io]
+, [atom](atom.io)
 , [Cheatsheet](cheatsheetapp.com)
 , [Dogecoin](github.com/dogecoin/dogecoin)
 , [Dropbox](dropbox.com)

@@ -110,6 +110,9 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 ## Customization
 
+# Control + scroll for zooming
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 

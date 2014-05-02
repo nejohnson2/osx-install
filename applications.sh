@@ -8,11 +8,17 @@ sudo xcodebuild -license
 
 # Install homebrew package manager and applications
 brew -v || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
 brew -v && {
   brew bundle Brewfile
   brew bundle Caskfile
   qlmanage -r
 }
+
+# Cinch postinstall requires accessibility
+[ -x /Applications/Cinch.app ] && \
+  sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db \
+  "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
 
 # Install commandline applications
 easy_install beets

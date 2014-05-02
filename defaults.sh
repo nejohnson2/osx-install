@@ -19,6 +19,3 @@ defaults write org.m0k.transmission BadgeUploadRate -bool false
 defaults write org.m0k.transmission DownloadAsk -bool false
 defaults write org.m0k.transmission MagnetOpenAsk -bool false
 defaults write org.m0k.transmission DownloadAsk -bool false
-
-# Cinch: enable accssibility
-sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"

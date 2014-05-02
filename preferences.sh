@@ -105,7 +105,6 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 # Finder: Open a new Finder window when a volume is mounted
 defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
 defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 
 # Finder: Disable .DS_Store file creation on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true

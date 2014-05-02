@@ -90,9 +90,6 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ## Finder
 
-# Finder: Open home folder in new windows
-defaults write com.apple.finder NewWindowTargetPath -string "file://localhost/Users/jedahan/Dropbox/"
-
 # Finder: Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write -globalDomain AppleKeyboardUIMode -int 3
 

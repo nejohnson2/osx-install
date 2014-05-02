@@ -9,11 +9,20 @@ name="talon"
   defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $name
 }
 
+# Ask for password after screen sleeps
+defaults write com.apple.screensaver askForPassword -bool true
+
 # Disable startup sound
 sudo nvram SystemAudioVolume=%80
 
-# Disable volume feedback
-defaults write -globalDomain com.apple.sound.beep.feedback -int 0
+# Show the ~/Library folder
+chflags nohidden ~/Library
+
+# Disable Gatekeeper
+[[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
+
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 ## Input Devices
 
@@ -22,6 +31,12 @@ defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
 defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
 
 ## User Interface
+
+# Disable volume feedback
+defaults write -globalDomain com.apple.sound.beep.feedback -int 0
+
+# Control + scroll for zooming
+defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
 # Disable auto-correct
 defaults write -globalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -50,7 +65,6 @@ for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.* ; do
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm"
 
 # Hot corners
-## Possible values:
 ##  0: no-op
 ##  2: Mission Control
 ##  3: Show application windows
@@ -107,23 +121,6 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Finder: Display full POSIX path as Finder window title
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
-
-## Customization
-
-# Control + scroll for zooming
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-
-# Ask for password after screen sleeps
-defaults write com.apple.screensaver askForPassword -bool true
-
-# Show the ~/Library folder
-chflags nohidden ~/Library
-
-# Disable Gatekeeper
-[[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
-
-# Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 ## Cleanup
 

@@ -4,14 +4,14 @@ Shell scripts for automated OSX machine setup. Requires [Xcode](https://develope
 
 ## Usage
 
-Edit any of the *.sh files in the scripts folder to your liking and then run `engage.sh` in your terminal
+Edit any of the files in to your liking and then run `engage.sh` in your terminal
 
 `engage.sh` will ask for your root password, and then:
 
-  1. Apply system preferences (like hostname)
-  2. Install commandline and gui software
-  3. Install application extensions, add-ons, and plug-ins
-  4. Apply application preferences
+  1. Apply system preferences (like hostname) (`preferences.sh`)
+  2. Install commandline and gui software (specified in `Brewfile` and `Caskfile`)
+  3. Install application extensions, add-ons, and plug-ins (`dotfiles.sh`)
+  4. Apply application preferences (`defaults.sh`)
 
 Neat things about this setup:
  - shell will be set to [zsh](zsh.org) with [prezto](github.com/sorin-ionescu/prezto)

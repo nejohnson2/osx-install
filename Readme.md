@@ -23,7 +23,8 @@ Neat things about this setup:
 
 ### commandline software
 
-[android-sdk](developer.android.com/index.html)
+[aircrack-ng](aircrack-ng.org)
+, [android-sdk](developer.android.com/index.html)
 , [coffee-script-redux](http://michaelficarra.github.io/CoffeeScriptRedux)
 , [deliver](github.com/gerhard/deliver)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)

@@ -9,6 +9,7 @@ install python
 install ruby
 
 # clis
+install aircrack-ng
 install android-sdk
 install deliver
 install git

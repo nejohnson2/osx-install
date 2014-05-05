@@ -1,5 +1,5 @@
 # Install gui applications with homebrew-cask
-tap phinze/homebrew-cask
+tap caskroom/cask
 install brew-cask
 tap caskroom/versions # for firefox and iterm2 betas
 

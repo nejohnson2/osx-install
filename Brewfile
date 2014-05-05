@@ -12,6 +12,7 @@ install ruby
 install aircrack-ng
 install android-sdk
 install deliver
+install dnsmasq
 install git
 install gist
 install hub

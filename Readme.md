@@ -57,7 +57,7 @@ Neat things about this setup:
 , [Cheatsheet](cheatsheetapp.com)
 , [Dogecoin](github.com/dogecoin/dogecoin)
 , [Dropbox](dropbox.com)
-, [Firefox Beta](mozilla.org/beta)
+, [Firefox](mozilla.org)
 , [iTerm2 Beta](iterm2.com)
 , [Skype](skype.com)
 , [Transmission](transmissionbt.com/)

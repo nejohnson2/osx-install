@@ -20,6 +20,7 @@ install horndis
 install hub
 install imagemagick
 install jq
+isntall mercurial
 install mongodb
 install nmap
 install node

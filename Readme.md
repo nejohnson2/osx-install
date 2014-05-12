@@ -37,6 +37,7 @@ Neat things about this setup:
 , [imagemagick](imagemagick.org)
 , [java](java.com)
 , [jq](stedolan.github.io/jq)
+, [hg](mercurial.selenic.com)
 , [mongodb](mongodb.org)
 , [nmap](nmap.org)
 , [node](nodejs.org)

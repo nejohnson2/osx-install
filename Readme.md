@@ -82,6 +82,10 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Install [obsidian menu bar](obsidianmenubar.com)
     * Customize dropbox and twitter icons
     * Add .menu to login items
+* Install [Flavours]()
+* Install [Alfred Twitch Tv]
+* Set xcode to 18 point inconsolata, dusk
+* Set textual to have command-[ switch across networks
 
 ## Postinstall Checklist
 * Install [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)

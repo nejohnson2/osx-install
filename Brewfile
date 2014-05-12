@@ -15,6 +15,7 @@ install deliver
 install dnsmasq
 install git
 install gist
+install horndis
 install hub
 install imagemagick
 install jq

@@ -31,6 +31,7 @@ Neat things about this setup:
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)
 , [git](git-scm.com)
 , [gist](github.com/defunkt/gist)
+, [go](golang.org)
 , [horndis](joshuawise.com/horndis)
 , [hub](hub.github.com)
 , [imagemagick](imagemagick.org)

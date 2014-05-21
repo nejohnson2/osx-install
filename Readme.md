@@ -88,6 +88,7 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Install [Alfred Twitch Tv]
 * Set xcode to 18 point inconsolata, dusk
 * Set textual to have command-[ switch across networks
+* Add [webster's dictionary](jsomers.net/blog/dictionary)
 
 ## Postinstall Checklist
 * Install [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)

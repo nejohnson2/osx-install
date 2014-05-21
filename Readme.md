@@ -81,14 +81,14 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
     * [Twitter](https://itunes.apple.com/us/app/twitter/id409789998?mt=12)
     * [Cinch](https://itunes.apple.com/us/app/cinch/id412529613?mt=12)
     * [Vox](https://itunes.apple.com/us/app/vox/id461369673?mt=12)
-* Install [obsidian menu bar](obsidianmenubar.com)
+* Install [obsidian menu bar](http://obsidianmenubar.com)
     * Customize dropbox and twitter icons
     * Add .menu to login items
-* Install [Flavours]()
-* Install [Alfred Twitch Tv]
-* Set xcode to 18 point inconsolata, dusk
+* Install [Flavours](http://flavours.interacto.net/)
+* Install [Alfred Twitch Tv](https://github.com/eusi/alfred2-twitch-streamer)
+* Set xcode to 18 point [inconsolata](http://www.levien.com/type/myfonts/inconsolata.html), dusk
 * Set textual to have command-[ switch across networks
-* Add [webster's dictionary](jsomers.net/blog/dictionary)
+* Add [webster's dictionary](http://jsomers.net/blog/dictionary)
 
 ## Postinstall Checklist
 * Install [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)

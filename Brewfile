@@ -22,11 +22,13 @@ install imagemagick
 install jq
 isntall mercurial
 install mongodb
+install ngrep
 install nmap
 install node
 install opencv --with-qt
 install redis
 install ssh-copy-id
+install tcpdump
 install the_silver_searcher
 install trash
 install watch

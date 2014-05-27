@@ -93,6 +93,7 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Set xcode to 18 point [inconsolata](http://www.levien.com/type/myfonts/inconsolata.html), dusk
 * Set textual to have command-[ switch across networks
 * Add [webster's dictionary](http://jsomers.net/blog/dictionary)
+* Login to [keybase](keybase.io)
 
 ## Postinstall Checklist
 * Install [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)

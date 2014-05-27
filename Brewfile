@@ -16,6 +16,7 @@ install dnsmasq
 install git
 install gist
 install go
+install gpg
 install horndis
 install hub
 install imagemagick

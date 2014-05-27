@@ -27,6 +27,10 @@ easy_install httpie
 # Install coffee-script
 npm install -g coffee-script-redux
 
+# Install keybase
+npm install -g keybase-installer
+keybase-installer
+
 # Install some more cli utilities
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="${HOME}/.gems"

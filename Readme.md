@@ -26,6 +26,7 @@ Neat things about this setup:
 [aircrack-ng](aircrack-ng.org)
 , [android-device-filetransfer](android.com/filetransfer)
 , [android-sdk](developer.android.com/index.html)
+, [cheat](github.com/chrisallenlane/cheat)
 , [coffee-script-redux](http://michaelficarra.github.io/CoffeeScriptRedux)
 , [deliver](github.com/gerhard/deliver)
 , [dnsmasq](thekelleys.org.uk/dnsmasq/doc.html)

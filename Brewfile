@@ -11,6 +11,7 @@ install ruby
 # clis
 install aircrack-ng
 install android-sdk
+install cheat
 install deliver
 install dnsmasq
 install git

@@ -31,6 +31,9 @@ npm install -g coffee-script-redux
 npm install -g keybase-installer
 keybase-installer
 
+# Install macspoof
+npm install -g spoof
+
 # Install some more cli utilities
 export GEM_HOME="${HOME}/.gems"
 export GEM_PATH="${HOME}/.gems"

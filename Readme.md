@@ -41,6 +41,7 @@ Neat things about this setup:
 , [jq](stedolan.github.io/jq)
 , [keybase](keybase.io)
 , [hg](mercurial.selenic.com)
+, [macspoof](github.com/feross/spoof)
 , [mongodb](mongodb.org)
 , [ngrep](ngrep.sourceforge.net)
 , [nmap](nmap.org)

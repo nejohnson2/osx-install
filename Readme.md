@@ -39,6 +39,7 @@ Neat things about this setup:
 , [keybase](keybase.io)
 , [macspoof](github.com/feross/spoof)
 , [mongodb](mongodb.org)
+, [mtr](http://www.bitwizard.nl/mtr/)
 , [ngrep](ngrep.sourceforge.net)
 , [nmap](nmap.org)
 , [node](nodejs.org)

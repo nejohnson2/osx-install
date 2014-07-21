@@ -20,6 +20,7 @@ install horndis
 install hub
 install jq
 install mongodb
+install mtr
 install ngrep
 install nmap
 install node

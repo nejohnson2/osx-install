@@ -1,17 +1,11 @@
 # Update software
 sudo softwareupdate --install --all
 
-# Install xcode and commandline tools (be sure to choose 'Get Xcode')
-xcode-select --install
-sudo xcode-select --switch /Library/Developer/CommandLineTools/
-sudo xcodebuild -license
-
-# Install homebrew package manager and applications
-brew -v || ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-
 brew -v && {
-  brew bundle Brewfile
-  brew bundle Caskfile
+  brew install ruby
+  brew tap Homebrew/bundle
+  brew bundle
+  brew bundle --file=Caskfile
   qlmanage -r
 }
 
@@ -21,18 +15,11 @@ brew -v && {
   "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
 
 # Install commandline applications
-easy_install beets
-easy_install httpie
-
-# Install coffee-script
-npm install -g coffee-script-redux
+sudo easy_install httpie
 
 # Install keybase
-npm install -g keybase-installer
+sudo npm install --global keybase-installer
 keybase-installer
-
-# Install macspoof
-npm install -g spoof
 
 # Install some more cli utilities
 export GEM_HOME="${HOME}/.gems"

@@ -12,12 +12,6 @@ name="talon"
 # Ask for password after screen sleeps
 defaults write com.apple.screensaver askForPassword -bool true
 
-# Disable startup sound
-sudo nvram SystemAudioVolume=%80
-
-# Show the ~/Library folder
-chflags nohidden ~/Library
-
 # Disable Gatekeeper
 [[ `spctl --status` == 'assessments disabled' ]] || sudo spctl --master-disable
 

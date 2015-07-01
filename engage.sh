@@ -2,6 +2,7 @@ function msg {
   echo "➜\033[1;32m $1 \033[0m";
 }
 
+msg "hi"
 msg "root permissions are required for a few commands, asking upfront"
 sudo -v
 

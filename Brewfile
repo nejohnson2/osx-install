@@ -1,36 +1,27 @@
 update
 upgrade
 
-tap gerhard/homebrew-deliver
-tap homebrew/dupes # for ruby
-
 # languages
 install python
-install ruby
 
 # clis
 install aircrack-ng
 install android-sdk
 install boot2docker
-install cheat
-install deliver
-install dnsmasq
+install fceux
 install git
-install gpg
 install horndis
-install hub
 install jq
-install mongodb
 install mtr
 install netcat6
+install neovim
 install ngrep
 install nmap
 install node
-install opencv --with-qt
-install redis
 install tcpdump
 install the_silver_searcher
 install trash
+install vice
 install watch
 install youtube-dl
 install --disable-etcdir zsh # because osx is misconfigured

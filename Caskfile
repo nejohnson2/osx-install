@@ -1,23 +1,28 @@
 # Install gui applications with homebrew-cask
 tap caskroom/cask
 install brew-cask
-tap caskroom/versions # for iterm2 beta
 
 # applications
 cask install alfred
 cask install android-device-filetransfer
 cask install arduino
 cask install atom
+cask install chromium
 cask install dash
+cask install disk-inventory-x
 cask install dropbox
 cask install firefox
+cask install flickr-uploader
+cask install fritzing
+cask install hex-fiend
 cask install horndis
 cask install iterm2
 cask install java
-cask install liteicon
-cask install netspot
-cask install spectacle
+cask install kryoflux
+cask install mini-vmac
+cask install mpv
 cask install steam
+cask install spotify
 cask install transmission
 cask install virtualbox
 cask install vlc

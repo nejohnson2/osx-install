@@ -98,3 +98,6 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 ## Postinstall Checklist
 * Activate [alfred powerpack](https://mail.google.com/mail/u/0/#search/alfred+powerpack)
 * Set masterpassword username
+* Install uBlock for firefox
+* Install favicon addon for firefox
+

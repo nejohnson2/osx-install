@@ -100,4 +100,3 @@ Sets up [My Dotfiles](https://github.com/jedahan/dotfiles), and defaults
 * Set masterpassword username
 * Install uBlock for firefox
 * Install favicon addon for firefox
-* PlugInstall for neovim

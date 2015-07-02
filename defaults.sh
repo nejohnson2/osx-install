@@ -1,3 +1,7 @@
+# Master Password
+defaults write com.lyndir.lhunath.MasterPassword.Mac hidePasswords -bool true
+defaults write com.lyndir.lhunath.MasterPassword.Mac rememberLogin -bool true
+
 # Transmission: Trash original torrent files
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 

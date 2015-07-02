@@ -2,10 +2,12 @@
 sudo softwareupdate --install --all
 
 brew -v && {
+  brew update
+  brew upgrade
   brew install ruby
   brew tap Homebrew/bundle
   brew bundle
-  brew bundle --file=Caskfile
+  brew cleanup
   qlmanage -r
 }
 

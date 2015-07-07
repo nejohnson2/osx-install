@@ -84,6 +84,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ## Finder
 
+# Finder: Open /Volumes/Data folder by default
+defaults write com.apple.finder NewWindowTargetPath -string "file:///Volumes/data/"
+
 # Finder: Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write -globalDomain AppleKeyboardUIMode -int 3
 

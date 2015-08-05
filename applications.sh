@@ -24,7 +24,7 @@ pip install pandas
 pip install scikit-learn
 pip install statsmodels
 pip install "ipython[notebook]"
-pip install geopandas
+pip install geopandas --pre
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
 brew install gnuradio --with-brewed-python

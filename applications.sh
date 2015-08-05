@@ -1,29 +1,45 @@
 # Update software
 sudo softwareupdate --install --all
 
+# Install  Commandline tools
+xcode-select --install
+
+# Install Homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Runs the Brewfile installation
 brew -v && {
   brew update
   brew upgrade
-  brew install ruby
   brew tap Homebrew/bundle
   brew bundle
   brew cleanup
   qlmanage -r
 }
 
-# Cinch postinstall requires accessibility
-[ -x /Applications/Cinch.app ] && \
-  sudo sqlite3 /Library/Application\ Support/com.apple.TCC/TCC.db \
-  "INSERT INTO access VALUES('kTCCServiceAccessibility','com.irradiatedsoftware.Cinch',0,1,1,NULL);"
+# Install python packages
+pip install matplotlib
+pip install lxml
+pip install numpy
+pip install cheetah
+pip install pandas
+pip install scikit-learn
+pip install scipy
+pip install statsmodels
+pip install "ipython[notebook]"
+pip install geopandas
+pip install Pillow
 
-# Install commandline applications
-sudo easy_install httpie
+# Install GnuRadio Stuff (not in Brewfile because of dependencies)
+brew install gnuradio --with-brewed-python
+brew install rtlsdr --HEAD
+brew install gr-osmosdr --HEAD
 
-# Install keybase
-sudo npm install --global keybase-installer
-keybase-installer
+# Set Terminal Preferences
+export PS1="Gioia : "
+export CLICOLOR=1
 
-# Install some more cli utilities
-export GEM_HOME="${HOME}/.gems"
-export GEM_PATH="${HOME}/.gems"
-gem install foreman homesick lolcat lolcommits
+git config --global user.name "Nicholas Johnson"
+git config --global user.email "nejohnson2@gmail.com"
+
+wget "http://media.tannern.com/tanner.terminal" -P ~/Downloads

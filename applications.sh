@@ -18,17 +18,13 @@ brew -v && {
 }
 
 # Install python packages
-pip install matplotlib
 pip install lxml
-pip install numpy
 pip install cheetah
 pip install pandas
 pip install scikit-learn
-pip install scipy
 pip install statsmodels
 pip install "ipython[notebook]"
 pip install geopandas
-pip install Pillow
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
 brew install gnuradio --with-brewed-python

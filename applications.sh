@@ -56,9 +56,10 @@ pip install geopandas --pre  # does not install tools
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
 brew tap metacollin/gnuradio
-brew tap nejohnson2/hombrew-sdr
-brew install metacollin/gnuradiognuradio
+brew tap nejohnson2/sdr
+brew install metacollin/gnuradio/gnuradio
 
+brew install bladerf --HEAD
 brew install rtlsdr --HEAD
 brew install gr-osmosdr --HEAD
 

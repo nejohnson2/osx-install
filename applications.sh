@@ -40,6 +40,7 @@ brew -v && {
   brew cask install the-unarchiver
   brew cask install mendeley-desktop
   brew cask install google-chrome
+  brew cask install sublime-text3
   brew cleanup
   qlmanage -r
 }
@@ -48,6 +49,7 @@ brew -v && {
 pip install lxml
 pip install cheetah
 pip install sphinx
+pip install numpy
 pip install pandas
 pip install scikit-learn
 pip install statsmodels
@@ -56,12 +58,15 @@ pip install geopandas --pre  # does not install tools
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
 brew tap metacollin/gnuradio
-brew tap nejohnson2/sdr
-brew install metacollin/gnuradio/gnuradio
+brew install gnuradio
 
+brew tap nejohnson2/sdr
 brew install bladerf --HEAD
 brew install rtlsdr --HEAD
+
 brew install gr-osmosdr --HEAD
+brew install gqrx --HEAD
+
 
 git config --global user.name "Nicholas Johnson"
 git config --global user.email "nejohnson2@gmail.com"

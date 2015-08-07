@@ -19,10 +19,6 @@ brew -v && {
   brew upgrade
   brew tap homebrew/python
   brew install python
-  brew install matplotlib
-  brew install pillow
-  brew install scipy
-  brew install scapy
   brew install pkg-config
   brew install git
   brew install wget
@@ -50,7 +46,11 @@ pip install lxml
 pip install cheetah
 pip install sphinx
 pip install numpy
+pip install matplotlib
+pip install pillow
 pip install pandas
+pip install scipy
+pip install scapy
 pip install scikit-learn
 pip install statsmodels
 pip install "ipython[notebook]"

@@ -1,4 +1,4 @@
-# nejohnson's Yosemite setup
+# nejohnson2's Yosemite setup
 
 Shell scripts for automated OSX machine setup. Requires [Xcode](https://developer.apple.com/downloads) and a network connection.
 

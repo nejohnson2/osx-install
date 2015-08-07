@@ -47,6 +47,7 @@ brew -v && {
 # Install python packages
 pip install lxml
 pip install cheetah
+pip install sphinx
 pip install pandas
 pip install scikit-learn
 pip install statsmodels
@@ -54,7 +55,10 @@ pip install "ipython[notebook]"
 pip install geopandas --pre  # does not install tools
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
-brew install gnuradio --with-brewed-python
+brew tap metacollin/gnuradio
+brew tap nejohnson2/hombrew-sdr
+brew install metacollin/gnuradiognuradio
+
 brew install rtlsdr --HEAD
 brew install gr-osmosdr --HEAD
 

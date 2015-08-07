@@ -1,3 +1,9 @@
+# Set Terminal Preferences
+touch .bash_profile
+echo "export PS1=\"Gioia : \"" >> .bash_profile
+echo "export CLICOLOR=1" >> .bash_profile
+source .bash_profile
+
 # Update software
 sudo softwareupdate --install --all
 
@@ -45,18 +51,12 @@ pip install pandas
 pip install scikit-learn
 pip install statsmodels
 pip install "ipython[notebook]"
-pip install geopandas --pre
+pip install geopandas --pre  # does not install tools
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
 brew install gnuradio --with-brewed-python
 brew install rtlsdr --HEAD
 brew install gr-osmosdr --HEAD
 
-# Set Terminal Preferences
-export PS1="Gioia : "
-export CLICOLOR=1
-
 git config --global user.name "Nicholas Johnson"
 git config --global user.email "nejohnson2@gmail.com"
-
-wget "http://media.tannern.com/tanner.terminal" -P ~/Downloads

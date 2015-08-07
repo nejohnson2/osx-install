@@ -3,16 +3,37 @@ sudo softwareupdate --install --all
 
 # Install  Commandline tools
 xcode-select --install
+xcodebuild -license
 
 # Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Runs the Brewfile installation
 brew -v && {
   brew update
   brew upgrade
-  brew tap Homebrew/bundle
-  brew bundle
+  brew tap homebrew/python
+  brew install python
+  brew install matplotlib
+  brew install pillow
+  brew install scipy
+  brew install scapy
+  brew install pkg-config
+  brew install git
+  brew install wget
+  brew install node
+  brew install caskroom/cask/brew-cask
+  brew cask install virtualbox
+  brew cask install xquartz
+  brew cask install qlcolorcode
+  brew cask install qlmarkdown
+  brew cask install qlstephen
+  brew cask install quicklook-csv
+  brew cask install quicklook-json
+  brew cask install qlimagesize
+  brew cask install cyberduck
+  brew cask install the-unarchiver
+  brew cask install mendeley-desktop
+  brew cask install google-chrome
   brew cleanup
   qlmanage -r
 }

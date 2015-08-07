@@ -57,10 +57,8 @@ pip install "ipython[notebook]"
 pip install geopandas --pre  # does not install tools
 
 # Install GnuRadio Stuff (not in Brewfile because of dependencies)
-brew tap metacollin/gnuradio
-brew install gnuradio
-
-brew tap nejohnson2/sdr
+brew tap nejohnson2/homesdr
+brew install gnuradio 
 brew install bladerf --HEAD
 brew install rtlsdr --HEAD
 

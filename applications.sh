@@ -68,10 +68,9 @@ brew install wxpython
 brew tap andresv/homebrew-gnuradio
 brew install gnuradio --with-qt
 
-# some require --HEAD, some do not
 brew install hackrf
-brew install bladerf
-brew install rtlsdr
+brew install bladerf --HEAD
+brew install rtlsdr --HEAD
 
 brew install gr-osmosdr gr-baz --HEAD
 mkdir ~/.gnuradio

@@ -4,6 +4,9 @@ echo "export PS1=\"Gioia : \"" >> .bash_profile
 echo "export CLICOLOR=1" >> .bash_profile
 source .bash_profile
 
+# Make Literature Folder
+mkdir ~/Documents/Literature
+
 # Update software
 sudo softwareupdate --install --all
 

@@ -22,6 +22,8 @@ brew -v && {
   brew upgrade
   brew tap homebrew/python
   brew install python
+  brew install gcc
+  brew install swig
   brew install pkg-config
   brew install git
   brew install wget
@@ -59,15 +61,27 @@ pip install statsmodels
 pip install "ipython[notebook]"
 pip install geopandas --pre  # does not install tools
 
-# Install GnuRadio Stuff (not in Brewfile because of dependencies)
-brew tap nejohnson2/homesdr
-brew install gnuradio 
-brew install bladerf --HEAD
-brew install rtlsdr --HEAD
+# Install SDR Stuff
+export PKG_CONFIG_PATH="/usr/X11/lib/pkgconfig"
+brew install wxpython
 
-brew install gr-osmosdr --HEAD
+brew tap andresv/homebrew-gnuradio
+brew install gnuradio --with-qt
+
+# some require --HEAD, some do not
+brew install hackrf
+brew install bladerf
+brew install rtlsdr
+
+brew install gr-osmosdr gr-baz --HEAD
+mkdir ~/.gnuradio
+touch ~/.gnuradio/config.conf
+
+echo "[grc]" >> ~/.gnuradio/config.conf
+echo "local_blocks_path=/usr/local/share/gnuradio/grc/blocks" >> ~/.gnuradio/config.conf
+
 brew install gqrx --HEAD
-
+brew linkapps
 
 git config --global user.name "Nicholas Johnson"
 git config --global user.email "nejohnson2@gmail.com"

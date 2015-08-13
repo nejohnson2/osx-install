@@ -41,7 +41,9 @@ brew -v && {
   brew cask install the-unarchiver
   brew cask install mendeley-desktop
   brew cask install google-chrome
-  brew cask install sublime-text3
+  brew cask install sublime-text
+  brew cask install mactex
+  brew cask install evernote
   brew cleanup
   qlmanage -r
 }

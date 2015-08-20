@@ -46,6 +46,7 @@ brew -v && {
   brew cask install evernote
   brew cask install microsoft-office # office for mac 2011
   brew cask install osxfuse
+  brew cask install sshfs
   brew cleanup
   qlmanage -r
 }

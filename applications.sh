@@ -47,6 +47,8 @@ brew -v && {
   brew cask install microsoft-office # office for mac 2011
   brew cask install osxfuse
   brew cask install sshfs
+  brew cask install flickr-uploadr
+  brew cask install wireshark
   brew cleanup
   qlmanage -r
 }
@@ -85,6 +87,16 @@ echo "[grc]" >> ~/.gnuradio/config.conf
 echo "local_blocks_path=/usr/local/share/gnuradio/grc/blocks" >> ~/.gnuradio/config.conf
 
 brew install gqrx --HEAD
+
+brew tap dholm/homebrew-sdr
+brew install libosmocore --HEAD # dependencies of gr-gsm
+brew install gr-gsm --HEAD 
+
+# In order to install gr-gsm properly, I needed to copy the 
+# grc block rtlsdr_source.xml to the appropriate folder.  Gnuradio-companion
+# still throws a bunch of error but everything works fine.
+# cp /usr/local/share/gnuradio/grc/blocks/rtlsdr_source.xml `/usr/local/Cellar/gnuradio/3.7.7.1/share/gnuradio/grc/blocks/rtlsdr_source.xml
+
 brew linkapps
 
 git config --global user.name "Nicholas Johnson"

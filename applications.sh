@@ -66,7 +66,7 @@ pip install scapy
 pip install scikit-learn
 pip install statsmodels
 pip install "ipython[notebook]"
-pip install geopandas --pre  # does not install tools
+pip install git+git://github.com/geopandas/geopandas.git
 
 # Install SDR Stuff
 export PKG_CONFIG_PATH="/usr/X11/lib/pkgconfig"

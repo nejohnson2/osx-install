@@ -49,6 +49,7 @@ brew -v && {
   brew cask install sshfs
   brew cask install flickr-uploadr
   brew cask install wireshark
+  brew cask install google-drive
   brew cleanup
   qlmanage -r
 }

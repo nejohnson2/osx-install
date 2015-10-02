@@ -28,6 +28,7 @@ brew -v && {
   brew install git
   brew install wget
   brew install node
+  brew install heroku-toolbelt
   brew install caskroom/cask/brew-cask
   brew cask install virtualbox
   brew cask install xquartz

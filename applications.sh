@@ -11,6 +11,7 @@ mkdir ~/Documents/Literature
 sudo softwareupdate --install --all
 
 # Install  Commandline tools
+# This installs the latest version which may not be desirable for gnuradio!
 xcode-select --install
 xcodebuild -license
 

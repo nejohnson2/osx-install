@@ -1,8 +1,8 @@
 # Set Terminal Preferences
-touch .bash_profile
-echo "export PS1=\"Gioia : \"" >> .bash_profile
-echo "export CLICOLOR=1" >> .bash_profile
-source .bash_profile
+touch ~/.bash_profile
+echo "export PS1=\"Gioia : \"" >> ~/.bash_profile
+echo "export CLICOLOR=1" >> ~/.bash_profile
+source ~/.bash_profile
 
 # Make Literature Folder
 mkdir ~/Documents/Literature
@@ -20,7 +20,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew -v && {
   brew update
   brew upgrade
-  brew tap homebrew/python
+  
   brew install python
   brew install gcc
   brew install swig
@@ -30,27 +30,27 @@ brew -v && {
   brew install node
   brew install heroku-toolbelt
   brew install caskroom/cask/brew-cask
-  brew cask install virtualbox
-  brew cask install xquartz
-  brew cask install qlcolorcode
-  brew cask install qlmarkdown
-  brew cask install qlstephen
-  brew cask install quicklook-csv
-  brew cask install quicklook-json
-  brew cask install qlimagesize
-  brew cask install cyberduck
-  brew cask install the-unarchiver
-  brew cask install mendeley-desktop
-  brew cask install google-chrome
-  brew cask install sublime-text
-  brew cask install mactex
-  brew cask install evernote
-  brew cask install microsoft-office # office for mac 2011
-  brew cask install osxfuse
-  brew cask install sshfs
-  brew cask install flickr-uploadr
-  brew cask install wireshark
-  brew cask install google-drive
+  brew cask install --appdir="~/Applications" virtualbox
+  brew cask install --appdir="~/Applications" xquartz
+  brew cask install --appdir="~/Applications" qlcolorcode
+  brew cask install --appdir="~/Applications" qlmarkdown
+  brew cask install --appdir="~/Applications" qlstephen
+  brew cask install --appdir="~/Applications" quicklook-csv
+  brew cask install --appdir="~/Applications" quicklook-json
+  brew cask install --appdir="~/Applications" qlimagesize
+  brew cask install --appdir="~/Applications" cyberduck
+  brew cask install --appdir="~/Applications" the-unarchiver
+  brew cask install --appdir="~/Applications" mendeley-desktop
+  brew cask install --appdir="~/Applications" google-chrome
+  brew cask install --appdir="~/Applications" sublime-text
+  brew cask install --appdir="~/Applications" mactex
+  brew cask install --appdir="~/Applications" evernote
+  brew cask install --appdir="~/Applications" microsoft-office # office for mac 2011
+  brew cask install --appdir="~/Applications" osxfuse
+  brew cask install --appdir="~/Applications" sshfs
+  brew cask install --appdir="~/Applications" flickr-uploadr
+  brew cask install --appdir="~/Applications" wireshark
+  brew cask install --appdir="~/Applications" google-drive
   brew cleanup
   qlmanage -r
 }
@@ -67,7 +67,7 @@ pip install scipy
 pip install scapy
 pip install scikit-learn
 pip install statsmodels
-pip install "ipython[notebook]"
+pip install "ipython[all]"
 pip install git+git://github.com/geopandas/geopandas.git
 
 # Install SDR Stuff

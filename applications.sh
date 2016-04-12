@@ -30,6 +30,7 @@ brew -v && {
   brew install wget
   brew install node
   brew install heroku-toolbelt
+  brew install autoenv
   brew install caskroom/cask/brew-cask
   brew cask install --appdir="~/Applications" virtualbox
   brew cask install --appdir="~/Applications" xquartz
@@ -70,6 +71,9 @@ pip install scikit-learn
 pip install statsmodels
 pip install "ipython[all]"
 pip install git+git://github.com/geopandas/geopandas.git
+pip install virtualenv
+pip install pandoc
+pip install Flask
 
 # Install SDR Stuff
 export PKG_CONFIG_PATH="/usr/X11/lib/pkgconfig"

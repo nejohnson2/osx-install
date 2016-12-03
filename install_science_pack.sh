@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Taken from the ScipySuperpack
+# https://github.com/fonnesbeck/ScipySuperpack/blob/master/install_superpack.sh
+# not tested
+
 brew install gcc
 
 pip install -U nose

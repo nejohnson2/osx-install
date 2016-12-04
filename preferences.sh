@@ -20,6 +20,9 @@ defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
 
 ## User Interface
 
+# Dark Interface
+defaults write -globalDomain AppleInterfaceStyle -string Dark
+
 # Control + scroll for zooming
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
@@ -34,6 +37,9 @@ defaults write com.apple.dock autohide -bool true
 
 # Remove default apps from the Dock
 defaults write com.apple.dock persistent-apps -array ""
+
+# Set clock format
+defaults write com.apple.menuextra.clock DateFormat -string "h:mm "
 
 # Hide Search, Time Machine, User, and Bluetooth icons
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search

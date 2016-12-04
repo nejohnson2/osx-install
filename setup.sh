@@ -41,7 +41,7 @@ mas -v > /dev/null 2>&1 || {
 # Install Xcode
 # this takes a long time and may not be necessary.  Maybe for gnuradio?
 mas install 497799835
-xcodebuild -license
+xcodebuild -license accept
 
 ./preferences.sh
 ./install_applications.sh

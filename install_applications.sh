@@ -16,6 +16,7 @@ brew -v && {
   brew install node
   brew install heroku-toolbelt
   brew install autoenv
+  brew install gdal
 
   brew cask install virtualbox
   brew cask install xquartz

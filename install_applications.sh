@@ -42,5 +42,10 @@ brew -v && {
   qlmanage -r
 }
 
+cd ~/Desktop/
+wget http://media.tannern.com/tanner.terminal
+open tanner.terminal
+rm tanner.terminal
+
 git config --global user.name "Nicholas Johnson"
 git config --global user.email "nejohnson2@gmail.com"

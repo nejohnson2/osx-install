@@ -1,25 +1,23 @@
 #!/bin/bash
 
-# Taken from the ScipySuperpack
-# https://github.com/fonnesbeck/ScipySuperpack/blob/master/install_superpack.sh
-# not tested
+brew tap homebrew/science
 
-brew install gcc
-
+# Install dependencies
 pip install -U nose
 pip install -U six
 pip install -U pygments
 pip install -U sphinx
 pip install -U cython
 
+pip install -U pillow
+pip install -U scapy
+pip install -U shapely
+
 # Install python packages
 pip install -U lxml
 pip install -U cheetah
 
 pip install numpy
-
-pip install pillow
-pip install scapy
 
 # Jupyter 
 brew install zeromq
@@ -41,10 +39,3 @@ pip install -U git+git://github.com/Theano/Theano.git
 
 # Geopandas
 pip install -U git+git://github.com/geopandas/geopandas.git
-
-numpy
-pandas (version 0.15.2 or later)
-shapely
-fiona
-six
-pyproj

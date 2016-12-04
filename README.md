@@ -1,12 +1,12 @@
-# nejohnson2's Yosemite setup
+# nejohnson2's macOS Sierra setup
 
-Shell scripts for automated OSX machine setup. Requires [Xcode](https://developer.apple.com/downloads) and a network connection.
+Shell scripts for automated macOS machine setup. Requires [Xcode](https://developer.apple.com/downloads) and a network connection.
 
 ## Usage
 
-Edit any of the files in to your liking and then run `engage.sh` in your terminal
+Edit any of the files in to your liking and then run `setup.sh` in your terminal
 
-`engage.sh` will ask for your root password, and then:
+`setup.sh` will ask for your root password, and then:
 
   1. Apply system preferences (like hostname) (`preferences.sh`)
   2. Install commandline and gui software (specified in `Brewfile` and `Caskfile`)
@@ -14,7 +14,7 @@ Edit any of the files in to your liking and then run `engage.sh` in your termina
 
 ## Software
 
-`applications.sh` installs [XCode Command Line Tools](), [Homebrew](http://brew.sh) and then the following software through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask):
+`install_applications.sh` installs [XCode Command Line Tools](), [Homebrew](http://brew.sh) and then the following software through [Homebrew](http://brew.sh) and [Homebrew Cask](https://github.com/phinze/homebrew-cask):
 
 ### commandline software
 

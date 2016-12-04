@@ -42,10 +42,12 @@ brew -v && {
   qlmanage -r
 }
 
+# Download Terminal theme
 cd ~/Desktop/
 wget http://media.tannern.com/tanner.terminal
 open tanner.terminal
 rm tanner.terminal
 
+# Configure git
 git config --global user.name "Nicholas Johnson"
 git config --global user.email "nejohnson2@gmail.com"

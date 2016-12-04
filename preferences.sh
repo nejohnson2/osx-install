@@ -41,13 +41,6 @@ defaults write com.apple.dock persistent-apps -array ""
 # Set clock format
 defaults write com.apple.menuextra.clock DateFormat -string "h:mm "
 
-# Hide Search, Time Machine, User, and Bluetooth icons
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.* ; do
-  defaults write $domain dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-    "/System/Library/CoreServices/Menu Extras/User.menu" \
-    "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
 
 ## Finder
 

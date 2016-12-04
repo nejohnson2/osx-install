@@ -1,6 +1,7 @@
 #!/bin/sh
-msg "Time for a fresh start!"
-msg "root permissions are required for a few commands, asking upfront"
+
+echo "Time for a fresh start!"
+echo "root permissions are required for a few commands, asking upfront"
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until this script has finished

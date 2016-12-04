@@ -44,5 +44,6 @@ mas install 497799835
 xcodebuild -license
 
 ./preferences.sh
-./applications.sh
+./install_applications.sh
+./install_science_pack.sh
 

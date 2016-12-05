@@ -8,16 +8,14 @@ pip install -U six
 pip install -U pygments
 pip install -U sphinx
 pip install -U cython
-
 pip install -U pillow
 pip install -U scapy
 pip install -U shapely
-
-# Install python packages
 pip install -U lxml
 pip install -U cheetah
 
-pip install numpy
+# Install python packages
+pip install -U numpy
 
 # Jupyter 
 brew install zeromq

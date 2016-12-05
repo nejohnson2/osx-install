@@ -39,6 +39,9 @@ brew -v && {
   brew cask install wireshark
   brew cask install suspicious-package
 
+  brew cask install coolterm
+  brew cask install dropbox
+
   brew cleanup
   qlmanage -r
 }
@@ -48,6 +51,24 @@ cd ~/Desktop/
 wget http://media.tannern.com/tanner.terminal
 open tanner.terminal
 rm tanner.terminal
+
+# Setup CUSP configuration
+BASH_PROFILE_PATH=~/.bash_profile
+echo 'Configuring CUSP SSH alias.'
+echo 'Enter the alias name:'
+read -p '> ' ALIAS 
+
+echo 'Enter your username:'
+read -p '> ' USER
+
+echo 'Enter the CUSP server address (gateway):'
+read -p '> ' SERVER 
+
+echo 'Enter second server address (compute):'
+read -p '> ' SERVER2
+
+echo "" >> $BASH_PROFILE_PATH
+echo "alias $ALIAS='ssh $USER@$SERVER -L 8000:$SERVER2:8000'" >> $BASH_PROFILE_PATH
 
 # Configure git
 git config --global user.name "Nicholas Johnson"

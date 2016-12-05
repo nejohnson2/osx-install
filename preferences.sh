@@ -23,6 +23,9 @@ defaults write -globalDomain com.apple.mouse.tapBehavior -int 1
 # Dark Interface
 defaults write -globalDomain AppleInterfaceStyle -string Dark
 
+# Show and hide the menu bar
+defaults write -globalDomain _HIHideMenuBar -bool true
+
 # Control + scroll for zooming
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 

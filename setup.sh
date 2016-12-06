@@ -9,6 +9,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set Terminal Preferences
 touch ~/.bash_profile
+echo "export PATH=/usr/local/bin:/usr/local/sbin:$PATH" >> ~/.bash_profile
 echo "export PS1=\"Gioia : \"" >> ~/.bash_profile
 echo "export CLICOLOR=1" >> ~/.bash_profile
 source ~/.bash_profile

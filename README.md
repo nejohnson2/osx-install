@@ -104,3 +104,13 @@ r - - = 100 in binary = 4
 ```
 chmod -R 700 <folder>
 ```
+
+# MISC Bash Settings
+
+To create a shortcut to CUSP RCF:
+
+'''
+alias cdf='ssh nj541@gw.cusp.nyu.edu -L 8000:compute.cusp.nyu.edu:8000'
+alias compute='ssh nj541@gw.cusp.nyu.edu -t ssh compute'
+alias cluster='ssh nj541@gw.cusp.nyu.edu -t ssh cluster'
+'''
